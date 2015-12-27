@@ -1,0 +1,25 @@
+RemoveHandler .html
+RemoveHandler .htm
+AddType text/html .htm .html
+AddType application/x-httpd-php .php .htm .html
+
+ErrorDocument 404 /kernel.php
+ErrorDocument 403 /kernel.php
+ErrorDocument 402 /kernel.php
+ErrorDocument 401 /kernel.php
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^bp-studio\.ru$ [NC]
+RewriteCond %{REQUEST_URI} !^/robots\.txt$
+RewriteRule ^(.*)$ http://www.bp-studio.ru/$1 [R=301,L]
+
+<ifModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule ^(.+)$ /kernel.php [L,QSA]
+</ifModule>
+
+php_value post_max_size 60M
+php_value upload_max_filesize 50M

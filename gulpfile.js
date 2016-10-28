@@ -1,18 +1,35 @@
 var gulp = require('gulp'),
-	autoprefixer = require('gulp-autoprefixer'),
-	cssmin = require('gulp-cssmin'),
-    concat = require('gulp-concat'),
-	less = require('gulp-less');
+    autoprefixer = require('gulp-autoprefixer'),
+    csslint = require('gulp-csslint'),
+    cleanCSS = require('gulp-clean-css'),
+    gutil = require('gulp-util'),
+    less = require('gulp-less');
 
-gulp.task('css', function () {
+function cssLintReporter(file) {
+    gutil.log(gutil.colors.cyan(file.csslint.errorCount)+' errors in '+gutil.colors.magenta(file.path));
+
+    file.csslint.results.forEach(function(result) {
+        gutil.log(result.error.message+' on line '+result.error.line);
+    });
+}
+
+gulp.task('build-css', function () {
     gulp.src('./css/main.less')
         .pipe(less())
-		.pipe(autoprefixer({
+        .pipe(autoprefixer({
             browsers: ['last 2 versions'],
-            cascade: false
+            cascade: true
         }))
-        .pipe(cssmin())
-        .pipe(gulp.dest('./css/main.min.css'));
+        .pipe(csslint({
+            'adjoining-classes': false,
+            'fallback-colors': false,
+            'font-sizes': false,
+            'important': false,
+            'unqualified-attributes': false
+        }))
+        .pipe(csslint.reporter(cssLintReporter))
+        .pipe(cleanCSS({
+            'compatibility': '*'
+        }))
+        .pipe(gulp.dest('./css/'));
 });
-
-gulp.task('build', ['css']);

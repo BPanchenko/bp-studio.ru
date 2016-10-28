@@ -1,21 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Marck+Script|PT+Mono|PT+Serif+Caption|Open+Sans:400,400italic,600,600italic,300,700,800,300italic,800italic,700italic&subset=latin,cyrillic);
-
-@import "http://ui.protosite.rocks/css/variables";
-@import "http://ui.protosite.rocks/css/mixins";
-
-@import "http://ui.protosite.rocks/css/default";
-@import "http://ui.protosite.rocks/css/iconic-glyphs";
-
-// Common classes
-@import "http://ui.protosite.rocks/css/elements/text";
-@import "http://ui.protosite.rocks/css/components/button";
-@import "http://ui.protosite.rocks/css/components/panel";
-@import "http://ui.protosite.rocks/css/objects/container";
-@import "http://ui.protosite.rocks/css/objects/user";
-@import "http://ui.protosite.rocks/css/utilities/margin";
-@import "http://ui.protosite.rocks/css/utilities/text";
-
-
 // Variables
 // ========================================================================
 
@@ -31,35 +13,11 @@
 .t-bpstudio {
 	background-image: @t-bpstudio-background-image;
 
-	.o-container {
-		padding-top: 20vh;
-	}
-
-	.c-panel.c-thumbnail.o-user {
-		margin: 0 auto;
-		box-sizing: content-box;
-		padding: @unit / 2;
-	}
-
-	.o-contacts {
-		cursor: default;
-		.c-button--link {
-			padding: 0;
-			vertical-align: baseline;
-			margin: @unit;
-		}
-	}
-}
-
-
-/* Media queries
- ========================================================================== */
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-	   only screen and (min-resolution: 192dpi),
-	   only screen and (min-resolution: 2dppx)
-{
-	.t-bpstudio {
+	// media query for retina display
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),
+		only screen and (min-resolution: 192dpi),
+		only screen and (min-resolution: 2dppx)
+	{
 		background-image: @t-bpstudio-background-image-retina;
 	}
 }

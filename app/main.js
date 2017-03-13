@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { AppContainer } from 'react-hot-loader';
-import Root from './containers/Root';
+import MainContainer from './containers/Main';
 
 import '../styles/main.less';
 
@@ -15,8 +15,4 @@ const render = Component => {
   )
 }
 
-render(Root);
-
-if (module.hot) {
-  module.hot.accept('./containers/Root', () => { render(Root) })
-}
+render(MainContainer);

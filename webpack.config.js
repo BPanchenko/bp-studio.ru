@@ -1,7 +1,5 @@
-const autoprefixer = require('autoprefixer');
-const extractTextPlugin = require('extract-text-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
-const precss = require('precss');
 const webpack = require('webpack');
 
 module.exports = {
@@ -29,27 +27,26 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel'
-      },
-      {
-        test: /\.css$/,
-        loader: extractTextPlugin.extract({
-          fallbackLoader: 'style',
-          loader: 'css!postcss'
-        })
-      },
-      {
-        test: /\.less$/,
-        loader: extractTextPlugin.extract({
-          fallbackLoader: 'style',
-          loader: 'css!postcss!less'
-        })
       }
     ],
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.less/,
+        use: [{
+          loader: "style-loader"
+        }, {
+          loader: "css-loader"
+        }, {
+          loader: "less-loader", options: {
+            strictMath: true,
+            noIeCompat: true
+          }
+        }]
       }
     ]
   },
@@ -58,7 +55,6 @@ module.exports = {
     , new webpack.NamedModulesPlugin() // prints more readable module names in the browser console on HMR updates
     , new webpack.NoEmitOnErrorsPlugin() // не дает перезаписать скрипты при наличии в них ошибок
   ],
-  // postcss: [precss, autoprefixer({browsers: ['last 2 versions']})],
   devServer: {
     host: 'localhost',
     port: 3000,

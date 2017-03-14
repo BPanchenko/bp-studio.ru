@@ -4,7 +4,13 @@ const webpack = require('webpack');
 
 module.exports = {
   devtool: 'eval-source-map',
-  entry: __dirname + "/app/main.js",
+  entry: {
+    'app': [
+      'babel-polyfill',
+      'react-hot-loader/patch',
+      __dirname + "/app/main.js"
+    ]
+  },
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'public'),

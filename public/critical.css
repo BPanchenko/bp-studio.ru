@@ -1,4 +1,37 @@
 
+/* Font's
+ ========================================================================== */
+
+@font-face {
+	font-family: 'Cormorant Garamond';
+	src: local('Cormorant Garamond'), local('CormorantGaramond-Regular'),
+        url('./fonts/cormorantgaramond/Cormorantgaramond.woff2') format('woff2'),
+        url('./fonts/cormorantgaramond/Cormorantgaramond.woff') format('woff'),
+        url('./fonts/cormorantgaramond/Cormorantgaramond.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Light'), local('FiraSans-Light'),
+        url('./fonts/firasans/Firasanslight.woff2') format('woff2'),
+        url('./fonts/firasans/Firasanslight.woff') format('woff'),
+        url('./fonts/firasans/Firasanslight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: local('Fira Sans Regular'), local('FiraSans-Regular'),
+        url('./fonts/firasans/Firasansregular.woff2') format('woff2'),
+        url('./fonts/firasans/Firasansregular.woff') format('woff'),
+        url('./fonts/firasans/Firasansregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Elements
  ========================================================================== */
 
@@ -13,14 +46,41 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	background-color: #faf5f0;
 
-	background-color: #f8f7f6;
-	background-position: top center;
-
-	font-family: 'Fira Sans', sans-serif;
+	font-family: 'Fira Sans';
 	font-size: 1.4rem;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.6;
-	color: black;
+	color: #222222;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cormorant Garamond';
+    font-weight: 400;
+    color: currentColor;
+    margin: 0;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+/* Utilities
+ ========================================================================== */
+
+.u-font-light {
+    font-weight: 200;
 }

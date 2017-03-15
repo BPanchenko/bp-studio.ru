@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import { AppContainer } from 'react-hot-loader';
-import MainContainer from './containers/Main';
+import MainLayout from './layouts/main';
 
 import '../styles/main.less';
 
@@ -15,4 +15,4 @@ const render = Component => {
   )
 }
 
-render(MainContainer);
+render(MainLayout);

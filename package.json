@@ -35,6 +35,7 @@
     "less": "^2.7.2",
     "less-loader": "^3.0.0",
     "react-hot-loader": "^3.0.0-beta.6",
+    "stats.js": "^0.17.0",
     "style-loader": "^0.13.2",
     "three": "^0.84.0",
     "webpack": "^2.2.1",

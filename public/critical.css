@@ -13,21 +13,28 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-color: #fafafa;
 
-    font-family: 'Open Sans', sans-serif;
+	background-color: #7AB8B8;
+    background: linear-gradient(to right, #7AB8B8, #EDC677, #7AB8B8, #EDC677);
+    background-size: 370% 370% !important;
+    animation: bggradient 30s ease-in-out infinite;
+
+    font-family: 'Raleway', sans-serif;
 	font-size: 1.4rem;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #212121;
+	color: #4b4b4b;
 }
 
 a {
     display: inline-block;
     position: relative;
-    color: #00838F;
+    color: #DE693E;
     text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 h1,
@@ -36,6 +43,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
     color: currentColor;
     margin: 0;
@@ -43,30 +51,60 @@ h6 {
 }
 
 h1 {
-    font-size: 3rem;
-    text-transform: uppercase;
-}
-h1 a::after {
-    content: ' ';
-    display: inline-block;
-    position: absolute;
-    bottom: -.5rem; left: 0;
-    border-bottom: 2px solid currentColor;
-
-    width: 0;
-    transition: width .16s cubic-bezier(0.3, 0, 0.2, 1);
-}
-h1 a:hover::after {
-    width: 100%;
+    font-size: 4.7rem;
+    font-weight: 400;
 }
 
-h2 {
-    font-size: 2.4rem;
+h2 { font-size: 2.4rem; }
+
+
+/* Animation
+ ========================================================================== */
+
+@-webkit-keyframes bggradient {
+    0%{background-position: 0% 50%}
+    50%{background-position: 100% 50%}
+    100%{background-position: 0% 50%}
 }
+@-moz-keyframes bggradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes bggradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes bggradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
 
 /* Utilities
  ========================================================================== */
 
 .u-font-light {
     font-weight: 300;
+}
+
+
+*[aria-hidden=true] {
+    display: none;
+    visibility: hidden;
+}
+
+
+/* Other
+ ========================================================================== */
+
+::-moz-selection {
+    background-color: #0e82a0;
+    color: #fdfdfd;
+}
+::selection {
+    background-color: #0e82a0;
+    color: #fdfdfd;
 }

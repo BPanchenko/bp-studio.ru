@@ -34,6 +34,7 @@
     "extract-text-webpack-plugin": "^2.1.0",
     "less": "^2.7.2",
     "less-loader": "^3.0.0",
+    "protosite.uikit": "^1.4.1",
     "react-hot-loader": "^3.0.0-beta.6",
     "stats.js": "^0.17.0",
     "style-loader": "^0.13.2",

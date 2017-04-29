@@ -1,30 +1,63 @@
 
+@app-margin: 1.6rem;
+
+@person-work-width: 20rem;
+@person-contacts-margin-top: 3.2rem;
+@person-work-margin-right: 3.2rem;
+@person-work-margin-left: -23.2rem;
+
+.app-container {
+	position: fixed;
+	top: @app-margin;
+	right: @app-margin;
+	bottom: @app-margin;
+	left: @app-margin;
+	overflow: hidden;
+	background-color: #FDFDFD;
+}
+
 .app__epigraph,
-.app__person-name,
-.app__person-work {
+.app__person {
 	position: fixed;
 }
 
-.app__person-name {
-	top: 3.2rem;
-	left: 6.4rem;
+.app__person {
+	top: 22vh;
+	left: 33vw;
+	text-align: center;
 }
-.app__person-name__first_line {
-	font-size: 1.3rem;
-	font-weight: 300;
-	letter-spacing: .07rem;
+
+.app__person-name,
+.app__person-work {
+	position: relative;
+	display: inline-block;
+}
+
+.app__person-contacts,
+.app__person-name {
+	text-align: left;
+}
+
+.app__person-contacts {
+	margin-top: @person-contacts-margin-top;
+
+	.c-button--link + .c-button--link {
+		margin-left: 1.6rem;
+	}
+}
+
+.app__person-name {
+	//margin-left: 4rem;
 }
 
 .app__person-work {
-	top: 3.2rem;
-	right: 6.4rem;
-
-	@media (max-width: 650px) { display: none; }
-}
-.app__person-work__first_line {
-	font-size: 1.3rem;
-	font-weight: 300;
-	letter-spacing: .3rem;
+	width: @person-work-width;
+	margin-left: @person-work-margin-left;
+	margin-right: @person-work-margin-right;
+	// margin-right: 4rem;
+	// letter-spacing: .2rem;
+	line-height: 1.4;
+	text-align: right;
 }
 
 .app__epigraph {
@@ -32,4 +65,22 @@
 	right: 6.4rem;
 	bottom: 3.2rem;
 	text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+	.app__person {
+		top: 10vh;
+		left: 10vw;
+	}
+
+	.app__person-contacts {
+		margin-top: 6.4rem;
+	}
+
+	.app__person-work {
+		display: block;
+		margin: 0 0 3.2rem;
+		text-align: left;
+	}
+
 }

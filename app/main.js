@@ -6,6 +6,8 @@ import MainLayout from './layouts/main';
 
 import '../styles/main.less';
 
+import '../node_modules/protosite.uikit/css/icons/iconic-glyphs.less';
+
 const render = Component => {
   ReactDOM.render(
       <AppContainer>

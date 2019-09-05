@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: 'Nexa Replica RU';
+	
+    src: local('Nexa Replica RU Bold'), local('NexaReplicaRUBold'),
+	url('nexa-replica-bold.woff2') format('woff2'),
+	url('nexa-replica-bold.woff') format('woff'),
+	url('nexa-replica-bold.ttf') format('truetype');
+	
+    font-weight: 600;
+    font-style: normal;
+}

@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: 'icon-bvp';
+    src: url('./icon-bvp.woff') format('woff'), url('./icon-bvp.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon[data-glyph]::before {
+    font-family: 'icon-bvp';
+    display: inline-block;
+    speak: none;
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon[data-glyph]:empty::before {
+    width: 1em;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.icon[data-glyph=company-github]::before { content:'\e000'; }
+.icon[data-glyph=company-facebook]::before { content:'\e001'; }
+.icon[data-glyph=company-headhunter]::before { content:'\e002'; }

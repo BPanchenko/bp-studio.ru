@@ -6,6 +6,12 @@ const PRINCIPLES_PATH = "/principles.json"
 const ELEMS = initElems()
 
 
+/* DOM Events
+ ========================================================================== */
+
+ELEMS.principle.addEventListener('click', event => fetchPrinciple().then(renderPrinciple));
+
+
 /* Principle: fetch & render
  ========================================================================== */
 
@@ -31,6 +37,7 @@ fetchPrinciple().then(renderPrinciple)
 
 function initElems() {
     return {
+        principle: document.querySelector('.js-principle'),
         principleTitle: document.querySelector('.js-principle-title'),
         principleText: document.querySelector('.js-principle-text')
     };

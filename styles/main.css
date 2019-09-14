@@ -119,10 +119,21 @@ body {
     border-bottom: 0.6rem solid currentColor;
 }
 
+.content__header__title {
+    font-size: 6rem;
+    line-height: 1.2;
+    margin: 1.6rem 0 2rem;
+    outline: 0.1rem dashed olivedrab;
+}
+
+.content__header__title.s-bigger {
+    font-size: 7.2rem;
+    margin: 5.4rem 0 4rem;
+}
+
 .content__text {
     display: block;
     width: var(--content-width);
-
 }
 
 

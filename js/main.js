@@ -4,6 +4,9 @@ import * as THREE from './three.module.js'
 const PRINCIPLES_PATH = "/principles.json"
 
 const ELEMS = initElems()
+const CLS = {
+    'bigger': 's-bigger'
+}
 
 
 /* DOM Events
@@ -23,7 +26,13 @@ async function fetchPrinciple() {
 }
 
 function renderPrinciple(data) {
-    console.log(data)
+
+    if (data.title.length <= 14) {
+        ELEMS.principleTitle.classList.add(CLS.bigger);
+    } else {
+        ELEMS.principleTitle.classList.remove(CLS.bigger);
+    }
+
     ELEMS.principleTitle.innerHTML = data.title
     ELEMS.principleText.innerHTML = data.text
 

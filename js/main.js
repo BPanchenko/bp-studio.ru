@@ -3,7 +3,7 @@ import * as THREE from './three.module.js'
 
 const PRINCIPLES_PATH = "/principles.json"
 
-const elems = initElems()
+const ELEMS = initElems()
 
 
 /* Principle: fetch & render
@@ -18,6 +18,9 @@ async function fetchPrinciple() {
 
 function renderPrinciple(data) {
     console.log(data)
+    ELEMS.principleTitle.innerHTML = data.title
+    ELEMS.principleText.innerHTML = data.text
+
 }
 
 fetchPrinciple().then(renderPrinciple)
@@ -28,7 +31,7 @@ fetchPrinciple().then(renderPrinciple)
 
 function initElems() {
     return {
-        principleText: document.querySelector('.js-principle-text'),
-        principleTitle: document.querySelector('.js-principle-title')
+        principleTitle: document.querySelector('.js-principle-title'),
+        principleText: document.querySelector('.js-principle-text')
     };
 }

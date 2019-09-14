@@ -213,6 +213,5 @@ body {
     position: absolute;
     bottom: var(--body-padding-bottom);
     right: calc(var(--body-padding-right) + var(--signature-right-width) * 3);
-    line-height: var(--signature-right-width);
     text-transform: uppercase;
 }

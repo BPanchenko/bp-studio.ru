@@ -2,24 +2,207 @@
 /* Variables
  ========================================================================== */
 
+:root {
+    --body-background-color: #fdf6e4;
+    --body-padding-top: 6rem;
+    --body-padding-right: 6rem;
+    --body-padding-bottom: 6rem;
+    --body-padding-left: 6rem;
+}
+
+:root {
+    --unit: 1.6rem;
+    --space-default: var(--unit);
+
+    --space-xxs:  calc(0.25 * var(--unit));  /* 0.4rem */
+    --space-xs:   calc(0.5 * var(--unit));  /* 0.8rem */
+    --space-sm:   calc(0.75 * var(--unit)); /* 1.2rem */
+    --space-md:   calc(1.5 * var(--unit)); /* 2.4rem */
+    --space-lg:   calc(2.5 * var(--unit));    /* 4rem */
+    --space-xl:   calc(3.25 * var(--unit)); /* 5.2rem */
+    --space-xxl:  calc(5.25 * var(--unit)); /* 8.4rem */
+}
 
 /* Document
  ========================================================================== */
 
 html {
+    width: 100%;
     height: 100%;
     font-size: 62.5%;
 }
 
 body {
+    width: 100%;
+    height: 100%;
 	margin: 0;
-    background-color: #fdf6e4;
+    background-color: var(--body-background-color);
+
     font-family: 'Nexa Replica RU';
     font-size: 1.6rem;
     font-weight: 600;
     color: #2c3b49;
+
+    overflow: hidden;
 }
 
 
-/* Content Grid
+/* Atoms
  ========================================================================== */
+
+.bp-fullname,
+.c-links-container,
+.c-link {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: inherit;
+}
+
+.bp-fullname {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.c-line {
+    --stroke-width: 0.6rem;
+
+    width: 100%;
+    height: var(--stroke-width);
+    background-color: currentColor;
+}
+
+.c-link {
+    color: #8e84cd;
+    text-decoration: none;
+}
+
+
+/* APP Layouts
+ ========================================================================== */
+
+.canvas,
+.signature {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.canvas {
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    top: var(--body-padding-top);
+    left: var(--body-padding-left);
+    z-index: 3;
+}
+
+.signature {
+    z-index: 2;
+}
+
+
+/* Content
+ ========================================================================== */
+
+.content {
+    --content-width: 73.2rem;
+}
+
+.content__header {
+    width: var(--content-width);
+    border-bottom: 0.6rem solid currentColor;
+}
+
+.content__text {
+    display: block;
+    width: var(--content-width);
+
+}
+
+
+
+/* ========================================================================
+   Signature
+ ========================================================================== */
+
+ .signature {
+    --signature-right-width: 3.2rem;
+ }
+
+/* Right Edge
+ ========================================================================== */
+
+.signature__right {
+    --width: var(--signature-right-width);
+    --height: 100vh;
+
+    width: calc(100vh - var(--body-padding-right) - var(--body-padding-left));
+    height: var(--width);
+    line-height: var(--width);
+
+    position: absolute;
+    top: var(--body-padding-top);
+    left: calc(100vw - var(--body-padding-right));
+    z-index: 10;
+
+    transform-origin: left top;
+    transform: rotate(90deg);
+}
+
+.signature__right .c-line {
+    position: absolute;
+    top: calc((var(--width) - var(--stroke-width)/2) / 2);
+    left: 0;
+    z-index: 1;
+}
+
+.signature__right .bp-fullname,
+.signature__right .c-links-container {
+    position: relative;
+    z-index: 2;
+    background-color: var(--body-background-color);
+}
+
+.signature__right .bp-fullname {
+    padding-right: var(--space-default);
+    vertical-align: text-top;
+    line-height: inherit;
+}
+
+.signature__right .c-links-container {
+    padding-left: var(--space-default);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.0001em;
+}
+
+.signature__right .c-link {
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+.signature__right .c-link + .c-link {
+    margin-left: 0.4rem;
+}
+
+.signature__right .c-link .icon::before {
+    font-size: var(--width);
+}
+
+/* Bottom Edge
+ ========================================================================== */
+
+.signature__bottom {
+    position: absolute;
+    bottom: var(--body-padding-bottom);
+    right: calc(var(--body-padding-right) + var(--signature-right-width) * 3);
+    line-height: var(--signature-right-width);
+    text-transform: uppercase;
+}

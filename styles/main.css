@@ -192,3 +192,13 @@ body {
     right: calc(var(--body-padding-right) + var(--signature-right-width) * 3);
     text-transform: uppercase;
 }
+
+
+/* ========================================================================
+   Utilites
+ ========================================================================== */
+
+*[aria-hidden=true] {
+    display: none;
+    visibility: hidden;
+}

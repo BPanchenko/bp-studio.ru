@@ -70,6 +70,10 @@ body {
 }
 
 .canvas {
+    top: var(--body-padding-top);
+    right: calc(var(--body-padding-right) + var(--signature-right-width) * 2);
+    bottom: var(--body-padding-bottom);
+    left: var(--body-padding-left);
     z-index: 1;
 }
 
@@ -117,10 +121,6 @@ body {
 /* ========================================================================
    Signature
  ========================================================================== */
-
- .signature {
-    --signature-right-width: 3.2rem;
- }
 
 /* Right Edge
  ========================================================================== */

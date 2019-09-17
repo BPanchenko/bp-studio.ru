@@ -1,12 +1,15 @@
 
 import * as THREE from './three.module.js'
-
-const PRINCIPLES_PATH = "/principles.json"
-
-const ELEMS = initElems()
-const CLS = {
-    'bigger': 's-bigger'
-}
+import {
+    CLS,
+    ELEMS,
+    PIC,
+    PRINCIPLES_PATH,
+    renderer,
+    renderScene,
+    scene,
+    camera
+} from './init.js'
 
 
 /* DOM Events
@@ -15,7 +18,46 @@ const CLS = {
 ELEMS.principle.addEventListener('click', event => fetchPrinciple().then(renderPrinciple));
 
 
-/* Principle: fetch & render
+/* ========================================================================
+   Canvas
+ ========================================================================== */
+
+function renderCircle() {
+    var geometry = new THREE.CircleGeometry( 0.5, 128 );
+    var material = new THREE.MeshBasicMaterial( { color: 0x87c4be } );
+    var circle = new THREE.Mesh( geometry, material );
+
+    circle.matrix.setPosition(0.5,0,0);
+    circle.matrixAutoUpdate = false;
+
+    scene.add( circle );
+}
+
+function renderTriangle() {
+    var triangle=new THREE.Geometry();
+    triangle.vertices.push(new THREE.Vector3(0,1,0));
+    triangle.vertices.push(new THREE.Vector3(-1,-1,0));
+    triangle.vertices.push(new THREE.Vector3(1,-1,0));
+    triangle.faces.push(new THREE.Face3(0,1,2));
+
+    var triangleMaterial=new THREE.MeshBasicMaterial({
+        color: 0xf8d9a2,
+        side: THREE.DoubleSide
+    });
+
+    var triangleMesh=new THREE.Mesh(triangle,triangleMaterial);
+    triangleMesh.position.set(0,0.0,4.0);
+
+    scene.add(triangleMesh);
+}
+
+renderCircle()
+renderTriangle()
+renderScene()
+
+
+/* ========================================================================
+   Principle: fetch & render
  ========================================================================== */
 
 async function fetchPrinciple() {
@@ -39,15 +81,3 @@ function renderPrinciple(data) {
 }
 
 fetchPrinciple().then(renderPrinciple)
-
-
-/* Helpers
- ========================================================================== */
-
-function initElems() {
-    return {
-        principle: document.querySelector('.js-principle'),
-        principleTitle: document.querySelector('.js-principle-title'),
-        principleText: document.querySelector('.js-principle-text')
-    };
-}

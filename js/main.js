@@ -20,7 +20,7 @@ import pics from './pics/_index.js'
    Canvas
  ========================================================================== */
 
-pics.arrows()
+pics.circles()
 renderScene()
 
 

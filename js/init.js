@@ -1,5 +1,6 @@
 
-import * as THREE from './three.module.js'
+import * as THREE from './lib/three.module.js'
+import Stats from './lib/stats.module.js'
 
 const CLS = {
     'bigger': 's-bigger'
@@ -52,7 +53,10 @@ renderer.setClearColor(new THREE.Color(0xEEEEEE))
 renderer.setSize(PIC.width, PIC.height)
 renderer.shadowMap.enabled = true
 
+let stats = new Stats()
+
 ELEMS.canvasContainer.appendChild(renderer.domElement)
+ELEMS.canvasContainer.appendChild(stats.dom)
 
 window.addEventListener('resize', onWindowResize, false)
 
@@ -92,5 +96,8 @@ export {
     CLS,
     ELEMS,
     PIC,
-    PRINCIPLES_PATH
+    PRINCIPLES_PATH,
+
+    Stats,
+    THREE
 }

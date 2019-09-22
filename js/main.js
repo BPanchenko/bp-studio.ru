@@ -1,58 +1,26 @@
 
-import * as THREE from './three.module.js'
 import {
+    THREE,
+
     CLS,
     ELEMS,
     PIC,
     PRINCIPLES_PATH,
+    
     renderer,
     renderScene,
     scene,
     camera
 } from './init.js'
 
-
-/* DOM Events
- ========================================================================== */
-
-ELEMS.principle.addEventListener('click', event => fetchPrinciple().then(renderPrinciple));
+import pics from './pics/_index.js'
 
 
 /* ========================================================================
    Canvas
  ========================================================================== */
 
-function renderCircle() {
-    var geometry = new THREE.CircleGeometry( 0.5, 128 );
-    var material = new THREE.MeshBasicMaterial( { color: 0x87c4be } );
-    var circle = new THREE.Mesh( geometry, material );
-
-    circle.matrix.setPosition(0.5,0,0);
-    circle.matrixAutoUpdate = false;
-
-    scene.add( circle );
-}
-
-function renderTriangle() {
-    var triangle=new THREE.Geometry();
-    triangle.vertices.push(new THREE.Vector3(0,1,0));
-    triangle.vertices.push(new THREE.Vector3(-1,-1,0));
-    triangle.vertices.push(new THREE.Vector3(1,-1,0));
-    triangle.faces.push(new THREE.Face3(0,1,2));
-
-    var triangleMaterial=new THREE.MeshBasicMaterial({
-        color: 0xf8d9a2,
-        side: THREE.DoubleSide
-    });
-
-    var triangleMesh=new THREE.Mesh(triangle,triangleMaterial);
-    triangleMesh.position.set(0,0.0,4.0);
-
-    scene.add(triangleMesh);
-}
-
-renderCircle()
-renderTriangle()
+pics.arrows()
 renderScene()
 
 
@@ -81,3 +49,12 @@ function renderPrinciple(data) {
 }
 
 fetchPrinciple().then(renderPrinciple)
+
+// TODO: 
+// 1) получение данных с сервера выполнять только когда их нет в приложении;
+// 2) после получения случайного принципа, перед визуализацией, удалять его из массива.
+
+/* DOM Events
+ ========================================================================== */
+
+ELEMS.principle.addEventListener('click', event => fetchPrinciple().then(renderPrinciple));

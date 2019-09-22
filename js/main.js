@@ -57,4 +57,4 @@ fetchPrinciple().then(renderPrinciple)
 /* DOM Events
  ========================================================================== */
 
-ELEMS.principle.addEventListener('click', event => fetchPrinciple().then(renderPrinciple));
+document.body.addEventListener('click', event => fetchPrinciple().then(renderPrinciple), false);

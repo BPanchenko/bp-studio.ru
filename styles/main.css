@@ -115,6 +115,7 @@ body {
 .content__text {
     display: block;
     width: var(--content-width);
+    line-height: 2.6rem;
 }
 
 

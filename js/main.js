@@ -13,7 +13,7 @@ import pics from './pics/_index.js'
    Canvas
  ========================================================================== */
 
-pics.squaresAndCircle()
+pics.squares()
 renderScene()
 
 

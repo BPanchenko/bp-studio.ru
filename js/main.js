@@ -1,16 +1,9 @@
 
 import {
-    THREE,
-
     CLS,
     ELEMS,
-    PIC,
     PRINCIPLES_PATH,
-    
-    renderer,
-    renderScene,
-    scene,
-    camera
+    renderScene
 } from './init.js'
 
 import pics from './pics/_index.js'
@@ -20,7 +13,7 @@ import pics from './pics/_index.js'
    Canvas
  ========================================================================== */
 
-pics.circles()
+pics.parallelepipedAndCircle()
 renderScene()
 
 

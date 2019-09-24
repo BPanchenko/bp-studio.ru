@@ -4,6 +4,7 @@ import {
     scene
 } from '../init.js'
 
+const COLORS = [0xf5885a, 0x6e669f];
 const RADIUS = 0.6355932203389831
 
 export default function () {
@@ -14,7 +15,7 @@ export default function () {
 function initLeftCircle() {
     let geometry = new THREE.CircleGeometry( RADIUS , 128 )
     let material = new THREE.MeshBasicMaterial({
-        color: 0xf5885a,
+        color: COLORS[0],
         opacity: 0.9
     })
 
@@ -45,7 +46,7 @@ function initLeftCircle() {
 function initRightCircle() {
     let geometry = new THREE.CircleGeometry( RADIUS , 128 )
     let material = new THREE.MeshBasicMaterial({
-        color: 0x6e669f,
+        color: COLORS[1],
         opacity: 0.8
     })
 

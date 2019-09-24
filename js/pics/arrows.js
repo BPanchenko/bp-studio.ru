@@ -4,13 +4,11 @@ import {
     scene
 } from '../init.js'
 
-const EXTRUDE_SETTINGS = {
-    depth: 8,
-    bevelEnabled: true,
-    bevelSegments: 2,
-    steps: 2,
-    bevelSize: 1,
-    bevelThickness: 1
+const COLORS = [0x87c4be, 0xbb3907];
+
+export default function () {
+    scene.add(initBiggerArrow())
+    scene.add(initSmallerArrow())
 }
 
 function initBiggerArrow() {
@@ -28,9 +26,9 @@ function initBiggerArrow() {
 
     let shape = new THREE.Shape(pts)
     let geometry = new THREE.ShapeGeometry(shape)
-    let material = new THREE.MeshBasicMaterial( {
-        color: 0x87c4be
-    } )
+    let material = new THREE.MeshBasicMaterial({
+        color: COLORS[0]
+    })
     let mesh = new THREE.Mesh(geometry, material)
 
     return mesh
@@ -51,13 +49,13 @@ function initSmallerArrow() {
     let shape = new THREE.Shape(pts)
     let geometry = new THREE.ShapeGeometry(shape)
     let material = new THREE.MeshBasicMaterial( {
-        color: 0xbb3907,
+        color: COLORS[1],
         opacity: 0.7
     } )
 
     material.blending = THREE.CustomBlending;
     material.blendEquation = THREE.AddEquation;
-    material.blendSrc = THREE.ZeroFactor;
+    material.blendDst = THREE.ZeroFactor;
 
     // material.blendSrc = THREE.OneFactor
     // material.blendSrc = THREE.SrcColorFactor
@@ -73,9 +71,4 @@ function initSmallerArrow() {
     let mesh = new THREE.Mesh(geometry, material)
 
     return mesh
-}
-
-export default function () {
-    scene.add(initBiggerArrow())
-    scene.add(initSmallerArrow())
 }

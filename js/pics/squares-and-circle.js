@@ -8,7 +8,7 @@ const COLORS = new Map([
     ['circle', 0xef9ead ],
     ['biggerSquare', 0xef9ead ],
     ['smallerSquare', 0x22a67d ]
-  ]);
+])
 
 export default function () {
     scene.add(initCircle())

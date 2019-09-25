@@ -4,7 +4,7 @@ import {
     scene
 } from '../init.js'
 
-const COLORS = [0xf5885a, 0x6e669f];
+const COLORS = [0xf5885a, 0x6e669f]
 const RADIUS = 0.6355932203389831
 
 export default function () {
@@ -19,9 +19,9 @@ function initLeftCircle() {
         opacity: 0.9
     })
 
-    material.blending = THREE.CustomBlending;
-    material.blendEquation = THREE.AddEquation;
-    material.blendDst = THREE.ZeroFactor;
+    material.blending = THREE.CustomBlending
+    material.blendEquation = THREE.AddEquation
+    material.blendDst = THREE.ZeroFactor
 
     // material.blendSrc = THREE.OneFactor
     // material.blendSrc = THREE.SrcColorFactor

@@ -12,20 +12,26 @@ export default function () {
         initSemicircle(COLORS[1]),
         initSemicircle(COLORS[2])
     ]
-
-    console.log(semicircles[0])
     
-    semicircles[0].matrix.setPosition( -0.5 , 0 , 0)
-    // semicircles[0].matrix.scale( 1 , 1 , 1)
+    semicircles[0].matrix.setPosition( -0.9774011299435028 , 0 , 0)
+    semicircles[0].matrix.scale(new THREE.Vector3(
+        0.615819209039548 , 
+        0.615819209039548 ,
+        1
+    ))
     semicircles[0].matrixAutoUpdate = false
-    // semicircles[0].updateMatrix()
     semicircles[0].renderOrder = 3
     
-    semicircles[1].matrix.setPosition( 0 , 0 , 0)
+    semicircles[1].matrix.setPosition( -0.5423728813559322 , 0 , 0)
+    semicircles[1].matrix.scale(new THREE.Vector3(
+        0.7796610169491525 ,
+        0.7796610169491525 ,
+        1
+    ))
     semicircles[1].matrixAutoUpdate = false
     semicircles[1].renderOrder = 2
     
-    semicircles[2].matrix.setPosition( 0.5 , 0 , 0)
+    semicircles[2].matrix.setPosition( -0.0310734463276836 , 0 , 0)
     semicircles[2].matrixAutoUpdate = false
     semicircles[2].renderOrder = 1
 

@@ -77,7 +77,7 @@ body {
     z-index: 1;
 }
 
-.content {
+.poster {
     position: relative;
     top: var(--body-padding-top);
     left: var(--body-padding-left);
@@ -90,32 +90,32 @@ body {
 }
 
 
-/* Content
+/* Poster
  ========================================================================== */
 
-.content {
-    --content-width: 73.2rem;
+.poster {
+    --poster-width: 73.2rem;
 }
 
-.content__header {
-    width: var(--content-width);
+.poster__header {
+    width: var(--poster-width);
     border-bottom: 0.6rem solid currentColor;
 }
 
-.content__header__title {
+.poster__header__title {
     font-size: 6rem;
     line-height: 1.2;
     margin: 1.6rem 0 2rem;
 }
 
-.content__header__title.s-bigger {
+.poster__header__title.s-bigger {
     font-size: 7.2rem;
     margin: 5.4rem 0 4rem;
 }
 
-.content__text {
+.poster__text {
     display: block;
-    width: var(--content-width);
+    width: var(--poster-width);
     font-family: Georgia, serif;
     font-size: 1.8rem;
     font-weight: normal;

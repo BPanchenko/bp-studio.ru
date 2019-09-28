@@ -116,7 +116,7 @@ body {
 .content__text {
     display: block;
     width: var(--content-width);
-    font-family: Georgia;
+    font-family: Georgia, serif;
     font-size: 1.8rem;
     font-weight: normal;
     line-height: 2.6rem;

@@ -58,35 +58,31 @@ body {
 /* APP Layouts
  ========================================================================== */
 
-.canvas,
 .signature {
-    position: absolute;
+    position: fixed;
     display: block;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 0;
-}
-
-.canvas {
-    top: var(--body-padding-top);
-    right: calc(var(--body-padding-right) + var(--signature-right-width) * 2);
-    bottom: var(--body-padding-bottom);
-    left: var(--body-padding-left);
-    z-index: 1;
+    z-index: 3;
+    user-select: none;
 }
 
 .poster {
     position: relative;
     top: var(--body-padding-top);
     left: var(--body-padding-left);
-    z-index: 3;
+    z-index: 2;
 }
 
-.signature {
-    z-index: 2;
-    user-select: none;
+.poster__picture {
+    position: fixed;
+    top: var(--body-padding-top);
+    right: calc(var(--body-padding-right) + var(--signature-right-width) * 2);
+    bottom: var(--body-padding-bottom);
+    left: var(--body-padding-left);
+    z-index: -1;
 }
 
 

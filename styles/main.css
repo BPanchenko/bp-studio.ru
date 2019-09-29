@@ -64,18 +64,12 @@ p + p {
 }
 
 
-/* APP Layouts
+/* ========================================================================
+   Poster
  ========================================================================== */
 
-.signature {
-    position: fixed;
-    display: block;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-    user-select: none;
+.poster {
+    --poster-width: 73.2rem;
 }
 
 .poster {
@@ -83,23 +77,6 @@ p + p {
     top: var(--body-padding-top);
     left: var(--body-padding-left);
     z-index: 2;
-}
-
-.poster__picture {
-    position: fixed;
-    top: var(--body-padding-top);
-    right: calc(var(--body-padding-right) + var(--signature-right-width) * 2);
-    bottom: var(--body-padding-bottom);
-    left: var(--body-padding-left);
-    z-index: -1;
-}
-
-
-/* Poster
- ========================================================================== */
-
-.poster {
-    --poster-width: 73.2rem;
 }
 
 .poster__header {
@@ -132,10 +109,30 @@ p + p {
     border-top: 0.2rem solid currentColor;
 }
 
+.poster__picture {
+    position: fixed;
+    top: var(--body-padding-top);
+    right: calc(var(--body-padding-right) + var(--signature-right-width) * 2);
+    bottom: var(--body-padding-bottom);
+    left: var(--body-padding-left);
+    z-index: -1;
+}
+
 
 /* ========================================================================
    Signature
  ========================================================================== */
+
+.signature {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    user-select: none;
+}
 
 /* Right Edge
  ========================================================================== */
@@ -143,7 +140,9 @@ p + p {
 .signature__right {
     --width: var(--signature-right-width);
     --height: 100vh;
+}
 
+.signature__right {
     width: calc(100vh - var(--body-padding-right) - var(--body-padding-left));
     height: var(--width);
     line-height: var(--width);

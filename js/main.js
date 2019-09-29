@@ -38,13 +38,13 @@ function renderPrinciple(data) {
     // content
 
     if (data.title.length <= 14) {
-        ELEMS.principleTitle.classList.add(CLS.bigger);
+        ELEMS.posterTitle.classList.add(CLS.bigger);
     } else {
-        ELEMS.principleTitle.classList.remove(CLS.bigger);
+        ELEMS.posterText.classList.remove(CLS.bigger);
     }
 
-    ELEMS.principleTitle.innerHTML = data.title
-    ELEMS.principleText.innerHTML = data.text
+    ELEMS.posterTitle.innerHTML = data.title
+    ELEMS.posterText.innerHTML = data.text
 
     // picture
 
@@ -56,9 +56,6 @@ function renderPrinciple(data) {
 
 fetchPrinciples().then(getAndRenderPrinciple)
 
-// TODO: 
-// 1) получение данных с сервера выполнять только когда их нет в приложении;
-// 2) после получения случайного принципа, перед визуализацией, удалять его из массива.
 
 /* DOM Events
  ========================================================================== */

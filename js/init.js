@@ -8,9 +8,9 @@ const CLS = {
 
 const ELEMS = {
     canvasContainer: document.querySelector('.js-canvas-container'),
-    principle: document.querySelector('.js-principle'),
-    principleTitle: document.querySelector('.js-principle-title'),
-    principleText: document.querySelector('.js-principle-text')
+    poster: document.querySelector('.js-poster'),
+    posterTitle: document.querySelector('.js-poster-title'),
+    posterText: document.querySelector('.js-poster-text')
 }
 
 const PIC = {

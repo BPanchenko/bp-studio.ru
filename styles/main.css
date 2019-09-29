@@ -17,7 +17,7 @@ body {
     background-color: var(--body-background-color);
 
     font-family: 'Nexa Replica RU';
-    font-size: 1.6rem;
+    font-size: var(--unit);
     font-weight: 600;
     color: #2c3b49;
 
@@ -30,7 +30,7 @@ p {
 }
 
 p + p {
-    margin-top: 1.6rem;
+    margin-top: var(--unit);
 }
 
 

@@ -48,7 +48,7 @@ function renderPrinciple(data) {
     if (data.title.length <= 14) {
         ELEMS.posterTitle.classList.add(CLS.bigger);
     } else {
-        ELEMS.posterText.classList.remove(CLS.bigger);
+        ELEMS.posterTitle.classList.remove(CLS.bigger);
     }
 
     ELEMS.posterTitle.innerHTML = data.title
@@ -59,7 +59,7 @@ function renderPrinciple(data) {
     for( var i = scene.children.length - 1; i >= 0; i--) scene.remove(scene.children[i])
     getRandomItem(picsList)()
     renderScene()
-
+    
 }
 
 fetchPrinciples().then(getAndRenderPrinciple)

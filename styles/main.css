@@ -142,7 +142,6 @@ p + p {
 
 .signature__right {
     --width: var(--signature-right-width);
-    --height: 100vh;
 }
 
 .signature__right {

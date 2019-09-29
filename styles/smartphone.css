@@ -40,10 +40,6 @@ p + p {
     line-height: 1.4;
 }
 
-.poster__text p {
-    max-width: 58ex;
-}
-
 .poster__picture {
     position: fixed;
     top: calc(var(--body-padding-top) + 4rem);

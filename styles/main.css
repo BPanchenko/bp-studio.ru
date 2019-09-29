@@ -103,10 +103,13 @@ p + p {
     font-weight: normal;
     line-height: 2.6rem;
     padding-top: 0.8rem;
-    padding-right: 3%;
     box-sizing: border-box;
     margin-top: 0.4rem;
     border-top: 0.2rem solid currentColor;
+}
+
+.poster__text p {
+    max-width: 58ex;
 }
 
 .poster__picture {

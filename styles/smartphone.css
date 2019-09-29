@@ -1,0 +1,115 @@
+
+:root {
+    --unit: 1.6rem;
+
+    --body-padding-top: 1.6rem;
+    --body-padding-right: 0.8rem;
+    --body-padding-bottom: 1.6rem;
+    --body-padding-left: 2.8rem;
+}
+
+
+/* ========================================================================
+   Poster
+ ========================================================================== */
+
+.poster {
+    --poster-width: 100%;
+}
+
+.poster {
+    position: absolute;
+    right: var(--body-padding-right);
+}
+
+.poster__header__title {
+    font-size: 4rem;
+    margin: 0 0 0.8rem;
+}
+.poster__header__title.s-bigger {
+    font-size: 4.4rem;
+    margin: 2.8rem 0 2.4rem;
+}
+
+.poster__text {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+.poster__text p {
+    width: 56ex;
+}
+
+.poster__picture {
+    position: fixed;
+    top: calc(var(--body-padding-top) + 4rem);
+    left: var(--body-padding-left);
+    width: 60vw;
+    height: 40vw;
+    right: auto;
+    bottom: auto;
+}
+
+
+/* ========================================================================
+   Signature
+ ========================================================================== */
+
+.signature {
+    position: absolute;
+    top: auto;
+    right: var(--body-padding-right);
+    left: var(--body-padding-left);
+    bottom: var(--body-padding-bottom);
+}
+
+.signature__right,
+.signature__right .c-line,
+.signature__bottom {
+    position: static;
+}
+
+.signature__right,
+.signature__bottom {
+    width: auto;
+    height: auto;
+}
+
+.signature__right {
+    transform: none;
+    line-height: 1;
+}
+
+.signature__right .bp-fullname {
+    font-size: 1.8rem;
+}
+
+.signature__right .c-line {
+    height: 0.4rem;
+}
+
+.signature__right .c-links-container {
+    padding-left: var(--space-default);
+    position: absolute;
+    padding-right: var(--space-xs);
+    right: 0;
+    bottom: 2.4rem;
+    font-size: 0.0001em;
+}
+
+.signature__right .c-link {
+    transform: none;
+}
+
+.signature__right .c-link + .c-link {
+    margin-left: 0.8rem;
+}
+
+.signature__right .c-link .icon::before {
+    font-size: 3.2rem;
+}
+
+.signature__bottom {
+    font-size: 1.4rem;
+    line-height: 1.8;
+}

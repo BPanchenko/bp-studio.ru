@@ -1,0 +1,51 @@
+
+
+
+
+/* ========================================================================
+   Poster
+ ========================================================================== */
+ 
+.poster {
+    --poster-width: 100%;
+}
+
+.poster {
+    position: absolute;
+    right: var(--body-padding-right);
+}
+
+.poster__header__title {
+    font-size: 5.2rem;
+}
+.poster__header__title.s-bigger {
+    font-size: 6.4rem;
+    margin: 4.4rem 0 4rem;
+}
+
+.poster__picture {
+    position: fixed;
+    top: calc(var(--body-padding-top) + 7rem);
+    left: var(--body-padding-left);
+    width: 80vw;
+    height: 50vw;
+    right: auto;
+    bottom: auto;
+}
+
+
+/* ========================================================================
+   Signature
+ ========================================================================== */
+
+.signature__right {
+    width: calc(70vh - var(--body-padding-right) - var(--body-padding-left));
+
+    top: auto;
+    left: auto;
+    right: calc(var(--body-padding-left) + var(--signature-right-width));
+    bottom: var(--body-padding-right);
+
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+}

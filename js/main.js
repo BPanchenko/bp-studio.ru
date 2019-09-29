@@ -17,8 +17,16 @@ let getAndRenderPrinciple = _.flow([getRandomItem, renderPrinciple])
 async function fetchPrinciples() {
     principlesList = await fetch(PRINCIPLES_PATH)
         .then(response => response.json())
-        .then(json => json.data.filter(d => d.enable))
+        .then(json => parsePrinciples(json.data))
     return principlesList
+}
+
+function parsePrinciples(list) {
+    list = list.filter(d => d.enable)
+    list.forEach(d => {
+        if (!/^\<p\>.+\<\/p\>$/i.test(d.text)) d.text = `<p>${d.text}</p>`
+    })
+    return list;
 }
 
 function getRandomItem(list) {

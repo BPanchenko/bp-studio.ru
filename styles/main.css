@@ -16,9 +16,10 @@ body {
 	margin: 0;
     background-color: var(--body-background-color);
 
-    font-family: 'Nexa Replica RU';
-    font-size: var(--unit);
-    font-weight: 600;
+    font-family: 'Arvo', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.375;
     color: #2c3b49;
 
     overflow: hidden;
@@ -85,6 +86,7 @@ p + p {
 }
 
 .poster__header__title {
+    font-family: 'Nexa Replica RU';
     font-size: 6rem;
     line-height: 1.2;
     margin: 1.6rem 0 2rem;
@@ -98,10 +100,6 @@ p + p {
 .poster__text {
     display: block;
     width: var(--poster-width);
-    font-family: Georgia, serif;
-    font-size: 1.8rem;
-    font-weight: normal;
-    line-height: 2.6rem;
     padding-top: 0.8rem;
     box-sizing: border-box;
     margin-top: 0.4rem;
@@ -134,6 +132,7 @@ p + p {
     bottom: 0;
     left: 0;
     z-index: 3;
+    font-family: 'Nexa Replica RU';
     user-select: none;
 }
 

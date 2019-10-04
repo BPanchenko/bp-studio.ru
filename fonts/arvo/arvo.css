@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Arvo';
+    src: local('Arvo'),
+	url('arvo.woff2') format('woff2'),
+	url('arvo.woff') format('woff'),
+	url('arvo.ttf') format('truetype');
+	
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arvo';
+    src: local('Arvo Italic'), local('Arvo-Italic'),
+	url('arvo-italic.woff2') format('woff2'),
+	url('arvo-italic.woff') format('woff'),
+	url('arvo-italic.ttf') format('truetype');
+    
+	font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Arvo';
+    src: local('Arvo Bold'), local('Arvo-Bold'),
+	url('arvo-bold.woff2') format('woff2'),
+	url('arvo-bold.woff') format('woff'),
+	url('arvo-bold.ttf') format('truetype');
+    
+	font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arvo';
+    src: local('Arvo Bold Italic'), local('Arvo-BoldItalic'),
+	url('arvo-bold-italic.woff2') format('woff2'),
+	url('arvo-bold-italic.woff') format('woff'),
+	url('arvo-bold-italic.ttf') format('truetype');
+    
+	font-weight: 700;
+    font-style: italic;
+}

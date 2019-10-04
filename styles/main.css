@@ -82,28 +82,28 @@ p + p {
 
 .poster__header {
     width: var(--poster-width);
-    border-bottom: 0.6rem solid currentColor;
+    border-bottom: 0.8rem solid currentColor;
 }
 
 .poster__header__title {
     font-family: 'Nexa Replica RU';
     font-size: 6rem;
-    line-height: 1.2;
-    margin: 1.6rem 0 2rem;
+    line-height: 6.6rem;
+    margin: 4rem 0 1rem;
 }
 
 .poster__header__title.s-bigger {
     font-size: 7.2rem;
-    margin: 5.4rem 0 4rem;
+    margin: 8rem 0 3.6rem;
 }
 
 .poster__text {
     display: block;
     width: var(--poster-width);
-    padding-top: 0.8rem;
+    padding-top: 1.4rem;
     box-sizing: border-box;
-    margin-top: 0.4rem;
-    border-top: 0.2rem solid currentColor;
+    margin-top: 0.3rem;
+    border-top: 0.3rem solid currentColor;
 }
 
 .poster__text p {

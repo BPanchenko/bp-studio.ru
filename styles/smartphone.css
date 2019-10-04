@@ -27,12 +27,13 @@ p + p {
 }
 
 .poster__header__title {
-    font-size: 4rem;
-    margin: 0 0 0.8rem;
+    font-size: 3.8rem;
+    line-height: 4.4rem;
+    margin: 2.7rem 0 1.3rem;
 }
 .poster__header__title.s-bigger {
-    font-size: 4.4rem;
-    margin: 2.8rem 0 2.4rem;
+    font-size: 5.2rem;
+    margin: 6.6rem 0 1.8rem;
 }
 
 .poster__text {

@@ -17,10 +17,12 @@
 
 .poster__header__title {
     font-size: 5.2rem;
+    line-height: 6.6rem;
+    margin: 3.3rem 0 0.7rem;
 }
 .poster__header__title.s-bigger {
-    font-size: 6.4rem;
-    margin: 4.4rem 0 4rem;
+    font-size: 6.6rem;
+    margin: 7.1rem 0 3.5rem;
 }
 
 .poster__picture {

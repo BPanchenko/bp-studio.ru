@@ -46,9 +46,9 @@ function renderPrinciple(data) {
     // content
 
     if (data.title.length <= 14) {
-        ELEMS.posterTitle.classList.add(CLS.bigger);
+        ELEMS.posterTitle.classList.add(CLS.bigger)
     } else {
-        ELEMS.posterTitle.classList.remove(CLS.bigger);
+        ELEMS.posterTitle.classList.remove(CLS.bigger)
     }
 
     ELEMS.posterTitle.innerHTML = data.title
@@ -68,4 +68,5 @@ fetchPrinciples().then(getAndRenderPrinciple)
 /* DOM Events
  ========================================================================== */
 
-document.body.addEventListener('click', evt => getAndRenderPrinciple(principlesList), false);
+document.body.addEventListener('click', evt => getAndRenderPrinciple(principlesList), false)
+window.addEventListener('mousewheel', evt => getAndRenderPrinciple(principlesList), false)

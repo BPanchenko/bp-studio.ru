@@ -1,7 +1,8 @@
 
 @font-face {
     font-family: 'icon-bvp';
-    src: url('./icon-bvp.woff') format('woff'), url('./icon-bvp.ttf') format('truetype');
+    src: url('./icon-bvp.woff?v=1.1.0') format('woff'),
+         url('./icon-bvp.ttf?v=1.1.0') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,3 +29,4 @@
 .icon[data-glyph=company-github]::before { content:'\e000'; }
 .icon[data-glyph=company-facebook]::before { content:'\e001'; }
 .icon[data-glyph=company-headhunter]::before { content:'\e002'; }
+.icon[data-glyph=company-linkedin]::before { content:'\e003'; }

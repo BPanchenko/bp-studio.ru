@@ -12,7 +12,15 @@ import pics from './pics/_index.js'
 
 let picsList = _.values(pics)
 let principlesList
-let getAndRenderPrinciple = _.flow([getRandomItem, renderPrinciple])
+let renderPoster = _.flow([
+    getRandomItem,
+    renderPrinciple
+])
+let updatePoster = _.flow([
+    getRandomItem,
+    renderPrinciple,
+    ym.bind(this, 55975369, 'reachGoal', 'update-poster')
+])
 
 async function fetchPrinciples() {
     principlesList = await fetch(PRINCIPLES_PATH)
@@ -62,11 +70,11 @@ function renderPrinciple(data) {
     
 }
 
-fetchPrinciples().then(getAndRenderPrinciple)
+fetchPrinciples().then(renderPoster)
 
 
 /* DOM Events
  ========================================================================== */
 
-document.body.addEventListener('click', evt => getAndRenderPrinciple(principlesList), false)
-window.addEventListener('mousewheel', evt => getAndRenderPrinciple(principlesList), false)
+document.body.addEventListener('click', evt => updatePoster(principlesList), false)
+window.addEventListener('mousewheel', evt => updatePoster(principlesList), false)

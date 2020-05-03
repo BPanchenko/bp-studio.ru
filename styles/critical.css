@@ -1,0 +1,38 @@
+
+/* Document
+ ========================================================================== */
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+	margin: 0;
+    background-color: var(--body-background-color, #fdf6e4);
+
+    font-family: 'Arvo', serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.375;
+    color: #2c3b49;
+
+    overflow: hidden;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p + p {
+    margin-top: var(--unit, 1.6rem);
+}
+
+[aria-hidden=true] {
+    display: none;
+    visibility: hidden;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Alkes';
+    src: local('Alkes Regular'), local('Alkes-Regular'),
+		 url('alkes.woff2') format('woff2'),
+		 url('alkes.woff') format('woff');
+	
+    font-weight: 400;
+    font-style: normal;
+}

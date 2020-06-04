@@ -18,8 +18,7 @@ let renderPoster = _.flow([
 ])
 let updatePoster = _.flow([
     getRandomItem,
-    renderPrinciple,
-    ym.bind(this, 55975369, 'reachGoal', 'update-poster')
+    renderPrinciple
 ])
 
 async function fetchPrinciples() {

@@ -1,0 +1,54 @@
+
+/* ========================================================================
+   Poster
+ ========================================================================== */
+
+.poster {
+    --poster-width: 73.2rem;
+}
+
+.poster {
+    position: relative;
+    top: var(--body-padding-top);
+    left: var(--body-padding-left);
+    z-index: 2;
+}
+
+.poster__header {
+    width: var(--poster-width);
+    border-bottom: 0.8rem solid currentColor;
+}
+
+.poster__header__title {
+    font-family: 'Nexa Replica RU';
+    font-size: 6rem;
+    line-height: 6.6rem;
+    margin: 4rem 0 1rem;
+}
+
+.poster__header__title.s-bigger {
+    font-size: 7.2rem;
+    margin: 8rem 0 3.6rem;
+}
+
+.poster__text {
+    display: block;
+    width: var(--poster-width);
+    padding-top: 1.4rem;
+    box-sizing: border-box;
+    margin-top: 0.3rem;
+    border-top: 0.3rem solid currentColor;
+}
+
+.poster__text p {
+    max-width: 58ex;
+}
+
+.poster__picture {
+    position: fixed;
+    top: var(--body-padding-top);
+    right: calc(var(--body-padding-right) + var(--flange-right-width) * 2);
+    bottom: var(--body-padding-bottom);
+    left: var(--body-padding-left);
+    z-index: -1;
+}

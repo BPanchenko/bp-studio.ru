@@ -1,7 +1,5 @@
 
 
-
-
 /* ========================================================================
    Poster
  ========================================================================== */
@@ -37,15 +35,15 @@
 
 
 /* ========================================================================
-   Signature
+   Edging
  ========================================================================== */
 
-.signature__right {
+.edging__right {
     width: calc(70vh - var(--body-padding-right) - var(--body-padding-left));
 
     top: auto;
     left: auto;
-    right: calc(var(--body-padding-left) + var(--signature-right-width));
+    right: calc(var(--body-padding-left) + var(--edging-right-width));
     bottom: var(--body-padding-right);
 
     transform-origin: right bottom;

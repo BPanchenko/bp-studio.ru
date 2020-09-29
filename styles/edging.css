@@ -1,0 +1,95 @@
+
+/* ========================================================================
+   Edging container
+ ========================================================================== */
+
+ .edging {
+    position: fixed;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    font-family: 'Nexa Replica RU';
+    user-select: none;
+    -ms-user-select: none;
+}
+
+/* Right Edge
+ ========================================================================== */
+
+.edging__right {
+    --width: var(--edging-right-width);
+}
+
+.edging__right {
+    width: calc(100vh - var(--body-padding-right) - var(--body-padding-left));
+    height: var(--width);
+    line-height: var(--width);
+
+    position: absolute;
+    top: var(--body-padding-top);
+    left: calc(100vw - var(--body-padding-right));
+    z-index: 10;
+
+    transform-origin: left top;
+    transform: rotate(90deg);
+}
+
+.edging__right .c-line {
+    position: absolute;
+    top: calc((var(--width) - var(--stroke-width)/2) / 2);
+    left: 0;
+    z-index: 1;
+}
+
+.edging__right .bp-fullname,
+.edging__right .c-links-container {
+    position: relative;
+    z-index: 2;
+    background-color: var(--body-background-color);
+}
+
+.edging__right .bp-fullname {
+    padding-right: var(--space-default);
+    vertical-align: text-top;
+    line-height: inherit;
+}
+
+.edging__right .c-links-container {
+    padding-left: var(--space-default);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 0.0001em;
+}
+
+.edging__right .c-link {
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+.edging__right .c-link + .c-link {
+    margin-left: 0.4rem;
+}
+
+.edging__right .c-link .icon::before {
+    font-size: var(--width);
+}
+
+/* Bottom Edge
+ ========================================================================== */
+
+.edging__bottom {
+    position: absolute;
+    bottom: var(--body-padding-bottom);
+    right: calc(var(--body-padding-right) + var(--edging-right-width) * 3);
+    text-transform: uppercase;
+}
+
+.edging__bottom .bp-experience,
+.edging__bottom .bp-link-feedback,
+.edging__bottom .bp-experience {
+    display: inline-block;
+}

@@ -47,7 +47,7 @@
 .poster__picture {
     position: fixed;
     top: var(--body-padding-top);
-    right: calc(var(--body-padding-right) + var(--flange-right-width) * 2);
+    right: calc(var(--body-padding-right) + var(--edging-right-width) * 2);
     bottom: var(--body-padding-bottom);
     left: var(--body-padding-left);
     z-index: -1;

@@ -1,15 +1,6 @@
 
 @import url("./variables.css");
 @import url("./atoms.css");
-@import url("./flange.css");
+@import url("./edging.css");
 @import url("./poster.css");
-
-
-/* ========================================================================
-   Utilites
- ========================================================================== */
-
-*[aria-hidden=true] {
-    display: none;
-    visibility: hidden;
-}
+@import url("./utilites.css");

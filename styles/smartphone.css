@@ -53,10 +53,10 @@ p + p {
 
 
 /* ========================================================================
-   Signature
+   Edging
  ========================================================================== */
 
-.signature {
+.edging {
     position: absolute;
     top: auto;
     right: var(--body-padding-right);
@@ -64,33 +64,33 @@ p + p {
     bottom: var(--body-padding-bottom);
 }
 
-.signature__right,
-.signature__right .c-line,
-.signature__bottom {
+.edging__right,
+.edging__right .c-line,
+.edging__bottom {
     position: static;
 }
 
-.signature__right,
-.signature__bottom {
+.edging__right,
+.edging__bottom {
     width: auto;
     height: auto;
 }
 
-.signature__right {
+.edging__right {
     transform: none;
     line-height: 1;
 }
 
-.signature__right .bp-fullname {
+.edging__right .bp-fullname {
     font-size: 1.8rem;
     background-color: transparent;
 }
 
-.signature__right .c-line {
+.edging__right .c-line {
     height: 0.4rem;
 }
 
-.signature__right .c-links-container {
+.edging__right .c-links-container {
     padding-left: var(--space-default);
     position: absolute;
     padding-right: var(--space-xs);
@@ -99,19 +99,19 @@ p + p {
     font-size: 0.0001em;
 }
 
-.signature__right .c-link {
+.edging__right .c-link {
     transform: none;
 }
 
-.signature__right .c-link + .c-link {
+.edging__right .c-link + .c-link {
     margin-left: 0.8rem;
 }
 
-.signature__right .c-link .icon::before {
+.edging__right .c-link .icon::before {
     font-size: 3.6rem;
 }
 
-.signature__bottom {
+.edging__bottom {
     font-size: 1.4rem;
     line-height: 1;
     padding-top: var(--space-sm);

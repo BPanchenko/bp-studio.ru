@@ -116,3 +116,14 @@ p + p {
     line-height: 1;
     padding-top: var(--space-sm);
 }
+
+
+/* ========================================================================
+    Logical Fallacies Page
+ ========================================================================== */
+
+.t-logical-fallacies {
+    width: auto;
+    max-width: 82ex;
+    margin: 40pt 16pt 12pt;
+}

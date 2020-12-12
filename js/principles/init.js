@@ -1,6 +1,6 @@
 
-import * as THREE from './lib/three.module.js'
-// import Stats from './lib/stats.module.js'
+import * as THREE from '../lib/three.module.js'
+// import Stats from '../lib/stats.module.js'
 
 const CLS = {
     'bigger': 's-bigger'

@@ -1,23 +1,28 @@
-const DATA_PATH = "/logical-fallacies.json"
+{
+  const DATA_PATH = "/logical-fallacies.json"
 
-function createItemElement(item) {
+  function createItemElement(item) {
     let elem = document.createElement('div')
     elem.classList.add('item-container')
     return (item.elem = elem)
-}
+  }
 
-async function fetchData() {
+  async function fetchData() {
     let result = await fetch(DATA_PATH).then(response => response.json())
     return result
-}
+  }
 
-function getItemElement(item) {
+  function getItemElement(item) {
     return item.elem ?? createItemElement(item)
-}
+  }
 
-function renderList(list) {
-    list.forEach(item => item => container.appendChild(getItemElement(item)));
-    return listContainer;
-}
+  function renderList(container, list) {
+    list.forEach(item => container.appendChild(getItemElement(item)))
+    return container
+  }
 
-fetchData().then(responseJson => renderList(responseJson.data))
+  document.addEventListener("DOMContentLoaded", event => {
+    let listContainer = document.querySelector('.js-list')
+    fetchData().then(responseJson => renderList(listContainer, responseJson.data))
+  })
+}

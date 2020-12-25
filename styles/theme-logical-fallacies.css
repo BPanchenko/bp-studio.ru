@@ -23,12 +23,12 @@
  ========================================================================== */
 
 .t-logical-fallacies .c-list {
-    counter-reset: item;
+    counter-reset: fallacies;
 }
 
 .t-logical-fallacies .c-list__item::before {
-    content: counter(item);
-    counter-increment: item;
+    content: counter(fallacies);
+    counter-increment: fallacies;
 }
 
 .t-logical-fallacies .c-list__cell {

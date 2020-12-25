@@ -22,10 +22,13 @@
 /* Component: List
  ========================================================================== */
 
-.t-logical-fallacies .c-list {}
+.t-logical-fallacies .c-list {
+    counter-reset: item;
+}
 
-.t-logical-fallacies .c-list__item {
-    
+.t-logical-fallacies .c-list__item::before {
+    content: counter(item);
+    counter-increment: item;
 }
 
 .t-logical-fallacies .c-list__cell {

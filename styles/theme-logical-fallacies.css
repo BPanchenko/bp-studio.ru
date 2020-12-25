@@ -20,33 +20,44 @@
 /* Component: List
  ========================================================================== */
 
-.t-logical-fallacies .list {}
+.t-logical-fallacies .c-list {}
 
-.t-logical-fallacies .list__row {
+.t-logical-fallacies .c-list__item {
     
 }
 
-.t-logical-fallacies .list__cell {
+.t-logical-fallacies .c-list__cell {
     
+}
+
+/* Object: Intro
+ ========================================================================== */
+
+.t-logical-fallacies .o-intro {}
+.t-logical-fallacies .o-intro__title {
+    font-size: 4.8rem;
+}
+.t-logical-fallacies .o-intro__desc {
+    font-size: 2.2rem;
 }
 
 /* Object: Fallacy
  ========================================================================== */
 
 /*dl*/
-.t-logical-fallacies .item-container {
+.t-logical-fallacies .o-fallacy-container {
     display: contents;
 }
 
 /*dt*/
-.t-logical-fallacies .item-title {
+.t-logical-fallacies .o-fallacy__title {
     font-family: var(--font-secondary);
 }
 
-.t-logical-fallacies .item-description {
+.t-logical-fallacies .o-fallacy__desc {
 
 }
 
-.t-logical-fallacies .item-text {
+.t-logical-fallacies .o-fallacy__text {
 
 }

@@ -32,22 +32,25 @@
         <script type="module" src="./js/logical-fallacies.js?v=1.0.0"></script>
 
     </head>
-    <body>
-        <main class="t-logical-fallacies">
+    <body class="t-logical-fallacies">
+        <main>
             <article>
-                <h1>
-                    Логические ошибки
-                </h1>
-                <p>
-                    Логические ошибки &mdash; следствие слабых аргументов.<br>
-                    Истина не нуждается в &laquo;костылях&raquo;, в то время как отсутствие аргументов вызывает у человека желание подкрепить свою позицию логическими ошибками.
-                </p>
-                <dl class="list js-list"></dl>
-                <template class="js-tpl-item">
-                    <dt class="list__cell item-title js-title"></dt>
-                    <dd class="list__cell">
-                        <div class="item-description js-description"></div>
-                        <div class="item-text js-text"></div>
+                <header class="o-intro">
+                    <h1 class="o-intro__title">
+                        Логические ошибки
+                    </h1>
+                    <p class="o-intro__desc">
+                        Логические ошибки &mdash; следствие слабых аргументов.<br>
+                        Истина не нуждается в &laquo;костылях&raquo;, в то время как отсутствие аргументов<br>
+                        вызывает у человека желание подкрепить свою позицию логическими ошибками.
+                    </p>
+                </header>
+                <dl class="c-list js-list"></dl>
+                <template class="js-tpl-fallacy">
+                    <dt class="c-list__cell o-fallacy__title js-title"></dt>
+                    <dd class="c-list__cell">
+                        <div class="o-fallacy__desc js-description"></div>
+                        <div class="o-fallacy__text js-text"></div>
                     </dd>
                 </template>
             </article>

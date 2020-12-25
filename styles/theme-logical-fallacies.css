@@ -18,3 +18,7 @@
     max-width: 80ex;
     margin: 6rem auto 12rem;
 }
+
+.t-logical-fallacies .item-container {
+    display: contents;
+}

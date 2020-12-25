@@ -3,7 +3,9 @@
  ========================================================================== */
 
 .t-logical-fallacies {
+    --body-background-color: #f2f2f2;
     --font-secondary: 'Commissioner', sans-serif;
+    --text-color: #212121;
 }
 
 

@@ -3,22 +3,50 @@
  ========================================================================== */
 
 .t-logical-fallacies {
-    --caption-font: 'Commissioner', sans-serif;
+    --font-secondary: 'Commissioner', sans-serif;
 }
-
 
 
 /* ========================================================================
    Theme: Logical Fallacies
  ========================================================================== */
 
+/*main*/
 .t-logical-fallacies {
     display: block;
     width: 100%;
-    max-width: 80ex;
-    margin: 6rem auto 12rem;
 }
 
+/* Component: List
+ ========================================================================== */
+
+.t-logical-fallacies .list {}
+
+.t-logical-fallacies .list__row {
+    
+}
+
+.t-logical-fallacies .list__cell {
+    
+}
+
+/* Object: Fallacy
+ ========================================================================== */
+
+/*dl*/
 .t-logical-fallacies .item-container {
     display: contents;
+}
+
+/*dt*/
+.t-logical-fallacies .item-title {
+    font-family: var(--font-secondary);
+}
+
+.t-logical-fallacies .item-description {
+
+}
+
+.t-logical-fallacies .item-text {
+
 }

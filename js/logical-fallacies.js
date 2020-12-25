@@ -3,7 +3,7 @@
 
   function createItemElement(item) {
     let elem = document.createElement('div')
-    elem.classList.add('item-container')
+    elem.classList.add('list__row', 'item-container')
     return (item.elem = elem)
   }
 

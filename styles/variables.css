@@ -1,4 +1,8 @@
 
+/* ========================================================================
+   Variables
+ ========================================================================== */
+
 :root {
     --unit: 1.6rem;
 
@@ -8,7 +12,7 @@
     --body-padding-bottom: 6rem;
     --body-padding-left: 6rem;
 
-    --caption-font: 'Nexa Replica RU';
+    --caption-font: "Nexa Replica RU";
 }
 
 :root {

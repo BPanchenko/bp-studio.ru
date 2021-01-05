@@ -1,5 +1,5 @@
 {
-  const DATA_PATH = "/logical-fallacies.json"
+  const DATA_PATH = "/data/logical-fallacies.json"
   const TPL = document.querySelector('.js-tpl-fallacy')
 
   function createItemElement(item) {

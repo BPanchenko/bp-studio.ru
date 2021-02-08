@@ -1,6 +1,125 @@
+
+/* Variables
+ ========================================================================== */
+
+.t-logical-fallacies {
+    --body-background-color: #f2f2f2;
+    --font-secondary: 'Commissioner', sans-serif;
+    --text-color: #212121;
+}
+
+
+/* ========================================================================
+   Theme: Logical Fallacies
+ ========================================================================== */
+
+/*main*/
 .t-logical-fallacies {
     display: block;
     width: 100%;
+}
+
+.t-logical-fallacies ul {
+    margin: 0;
+}
+
+/* Component: List
+ ========================================================================== */
+
+/*dl*/
+.t-logical-fallacies .c-list {
+    counter-reset: fallacies;
+    margin-top: 2.4rem;
+}
+
+.t-logical-fallacies .c-list__item + .c-list__item {
+    margin-top: 4rem;
+}
+
+.t-logical-fallacies .c-list__cell:nth-child(1)::before {
+    content: counter(fallacies);
+    counter-increment: fallacies;
+}
+
+.t-logical-fallacies .c-list__cell {
+    display: block;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.t-logical-fallacies .c-list__cell:nth-child(1) { width: 15%; }
+.t-logical-fallacies .c-list__cell:nth-child(2) { width: 25%; }
+.t-logical-fallacies .c-list__cell:nth-child(3) { width: 60%; }
+
+/* Object: Intro
+ ========================================================================== */
+
+.t-logical-fallacies .o-intro {
+    position: relative;
+    height: 50vh;
+    line-height: 40vh;
+    padding-left: 6vw;
+    box-sizing: border-box;
+    border-bottom: 0.3rem solid currentColor;
+}
+
+.t-logical-fallacies .o-intro__container {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: bottom;
+}
+
+/*h1*/
+.t-logical-fallacies .o-intro__title {
+    margin-bottom: 0;
+    font-size: 4.8rem;
+}
+
+/*p*/
+.t-logical-fallacies .o-intro__desc {
+    margin-top: 4rem;
+    font-size: 2.2rem;
+    line-height: 1.4;
+}
+
+/* Object: Fallacy
+ ========================================================================== */
+
+/*dl*/
+.t-logical-fallacies .o-fallacy-container {
+    display: flex;
+}
+
+/*dt*/
+.t-logical-fallacies .o-fallacy__title {
+    font-family: var(--font-secondary);
+    font-size: 2.2rem;
+}
+
+.t-logical-fallacies .o-fallacy__title ul {
+    padding-left: 3.2rem;
+}
+
+.t-logical-fallacies .o-fallacy__desc {
+    max-width: 60ex;
+    font-size: 1.8rem;
+}
+
+.t-logical-fallacies .o-fallacy__desc ul {
+    padding-left: 2rem;
+}
+
+.t-logical-fallacies .o-fallacy__text {
     max-width: 80ex;
-    margin: 6rem auto 12rem;
+    font-size: 1.6rem;
+}
+
+.t-logical-fallacies .o-fallacy__text ul {
+    padding-left: 2rem;
+}
+
+.t-logical-fallacies .o-fallacy__number {
+    padding-left: 6vw;
+    line-height: 1;
+    font-size: 4.8rem;
 }

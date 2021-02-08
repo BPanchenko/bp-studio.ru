@@ -26,10 +26,21 @@
             <header class="" aria-hidden="true">
                 <a href="">На главную страницу</a>
             </header>
-            <form class="o-form">
-                <textarea class="c-field" name="message" placeholder="Напишите несколько слов о проекте и не забудьте указать свою электропочту или номер телефона чтобы я мог связаться с вами"></textarea>
-                <button class="c-button" type="submit"></button>
-            </form>
+            <section class="o-chat">
+                <div class="c-list">
+                    <section class="c-list__item o-message o-message--from s-bigger">
+                        <c-avatar>
+                        <span class="o-message__author-name">Борис Панченко</span>
+                        <time class="o-message__created-time" aria-hidden="true"></time>
+                        <p class="o-message__text">
+                            Вам нужен профессиональный совет или ментор?<br>Напишите мне пару слов о вашем проекте<br>и контакты для связи с вами
+                        </p>
+                    </section>
+                </div>
+                <form class="o-form">
+                    <button class="c-button" type="submit"></button>
+                </form>
+            </section>
         </main>
-	</body>
+    </body>
 </html>

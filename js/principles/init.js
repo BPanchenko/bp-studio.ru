@@ -1,6 +1,8 @@
 
-import * as THREE from './lib/three.module.js'
-// import Stats from './lib/stats.module.js'
+import * as THREE from '../lib/three.module.js'
+// import Stats from '../lib/stats.module.js'
+
+const DATA_PATH = "/principles.json"
 
 const CLS = {
     'bigger': 's-bigger'
@@ -36,8 +38,6 @@ const PIC = {
         return this.__horizontalRatio > this.__verticalRatio ? 'horizontal' : 'vertical';
     }
 }
-
-const PRINCIPLES_PATH = "/principles.json"
 
 const scene = new THREE.Scene()
 const camera = new THREE.OrthographicCamera(-1, 1, 1, -1)
@@ -95,6 +95,6 @@ export {
     CLS,
     ELEMS,
     PIC,
-    PRINCIPLES_PATH,
+    DATA_PATH,
     THREE
 }

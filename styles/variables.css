@@ -1,6 +1,12 @@
 
+/* ========================================================================
+   Variables
+ ========================================================================== */
+
 :root {
     --unit: 1.6rem;
+
+    --text-color: #2c3b49;
 
     --body-background-color: #fdf6e4;
     --body-padding-top: 6rem;
@@ -8,12 +14,9 @@
     --body-padding-bottom: 6rem;
     --body-padding-left: 6rem;
 
-    --caption-font: 'Nexa Replica RU';
-}
+    --caption-font: "Nexa Replica RU";
 
-:root {
     --space-default: var(--unit);
-
     --space-xxs:  calc(0.25 * var(--unit));  /* 0.4rem */
     --space-xs:   calc(0.5 * var(--unit));  /* 0.8rem */
     --space-sm:   calc(0.75 * var(--unit)); /* 1.2rem */
@@ -21,8 +24,6 @@
     --space-lg:   calc(2.5 * var(--unit));    /* 4rem */
     --space-xl:   calc(3.25 * var(--unit)); /* 5.2rem */
     --space-xxl:  calc(5.25 * var(--unit)); /* 8.4rem */
-}
 
-:root {
     --edging-right-width: 3.2rem;
 }

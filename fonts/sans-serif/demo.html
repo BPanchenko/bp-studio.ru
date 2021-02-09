@@ -4,12 +4,20 @@
         <title>Font Demo</title>
         <meta charset="utf-8">
         <meta name="copyright" content="Boris Panchenko, 2021">
+        
+        <link rel="preload" href="regular.woff" as="font" type="font/woff">
+        <link rel="preload" href="bold.woff" as="font" type="font/woff">
+        <link rel="preload" href="extrabold.woff" as="font" type="font/woff">
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
         <style>
 
             /* Document
              ========================================================================== */
+
+            :root {
+                --paragraph-width: 70ex;
+            }
 
             html {
                 height: 100%;
@@ -21,7 +29,14 @@
                 background-color: rgb(245, 245, 245);
                 color: rgb(40, 41, 43);
                 font-family: 'Sans Serif';
+                font-display: swap;
+            }
+
+            p {
                 font-size: 1.4rem;
+                line-height: 2.2rem;
+                width: var(--paragraph-width);
+                hyphens: auto;
             }
 
             /* Page
@@ -34,7 +49,7 @@
                 grid-template-areas: "header header"
                                      "paragraph letter"
                                      "paragraph characters";
-                grid-template-columns:  minmax(70ex, 1fr) 1.5fr;
+                grid-template-columns:  minmax(var(--paragraph-width), 1fr) 1.5fr;
                 grid-template-rows: auto 1fr 1.5fr;
             }
 
@@ -75,10 +90,6 @@
 
             .paragraph-container {
                 grid-area: paragraph;
-            }
-
-            .paragraph-container p {
-                width: 70ex;
             }
 
             .s-regular { font-weight: 400; }

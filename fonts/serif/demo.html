@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Font Demo</title>
+        <meta charset="utf-8">
+        <meta name="copyright" content="Boris Panchenko, 2021">
+        
+        <link rel="preload" href="regular.woff" as="font" type="font/woff">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+        <style>
+
+            /* Document
+             ========================================================================== */
+
+            :root {
+                --paragraph-width: 70ex;
+            }
+
+            html {
+                height: 100%;
+                font-size: 62.5%;
+            }
+
+            body {
+                margin: 0;
+                background-color: rgb(245, 245, 245);
+                color: rgb(40, 41, 43);
+                font-family: 'Just Serif';
+                font-display: swap;
+            }
+
+            h1 {
+                font-weight: 400;
+            }
+
+            p {
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                width: var(--paragraph-width);
+                hyphens: auto;
+            }
+
+            /* Page
+             ========================================================================== */
+
+            .container {
+                display: grid;
+                padding: 4rem;
+                grid-gap: 4rem;
+                grid-template-areas: "header header"
+                                     "paragraph letter"
+                                     "paragraph characters";
+                grid-template-columns:  minmax(var(--paragraph-width), 1fr) 1.5fr;
+                grid-template-rows: auto 1fr 1.5fr;
+            }
+
+            .header {
+                grid-area: header;
+                white-space: nowrap;
+                overflow: hidden;
+                text-transform: uppercase;
+            }
+
+            /* Text
+             ========================================================================== */
+
+            .characters {
+                grid-area: characters;
+                font-size: 2.8rem;
+                letter-spacing: 0.2em;
+            }
+
+            .characters > * {
+                margin: 1em 0;
+            }
+
+            a.character {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            a.character:hover {
+                outline: 1px solid currentColor;
+            }
+
+            .letter {
+                grid-area: letter;
+                font-size: 28rem;
+                line-height: 1em;
+            }
+
+            .paragraph-container {
+                grid-area: paragraph;
+            }
+
+            .s-regular { font-weight: 400; }
+            .s-bold { font-weight: 700; }
+            .s-extrabold { font-weight: 800; }
+        </style>
+
+    </head>
+    <body>
+        <main class="container">
+            <header class="header">
+                <h1>
+                    In typography, a serif (/ˈsɛrɪf/) is a small line or stroke regularly attached to the end of a larger stroke in a letter or symbol within a particular font or family of fonts.
+                </h1>
+            </header>
+            <section class="paragraph-container">
+                <p>
+                    Аллегория монотонно дает мимезис. Интеллигенция имитирует определенный предмет искусства. Компенсаторная функция имеет невротический канон. Эпитет вызывает самодостаточный онтологический статус искусства. Метод кластерного анализа, в том числе, образует инвариант.
+                </p>
+                <p>
+                    Эйдос, следовательно, вызывает резкий структурализм, это же положение обосновывал Ж.Польти в книге "Тридцать шесть драматических ситуаций". Символизм, следовательно, начинает катарсис. Онтогенез дает невротический миракль. Идея (пафос), по определению, готично представляет собой невротический горизонт ожидания. Согласно теории "вчувствования", разработанной Теодором Липпсом, экспрессионизм вызывает бессознательный онтогенез.
+                </p>
+                <p>
+                    Ролевое поведение изящно аккумулирует реконструктивный подход. Весьма существенно следующее: компенсаторная функция образует экзистенциализм. Параллельность стилевого развития заканчивает глубокий этикет. Как было показано выше, постмодернизм изящно трансформирует постмодернизм.
+                </p>
+            </section>
+            <section class="letter s-extrabold js-character-display">
+                Аа
+            </section>
+            <section class="characters">
+                <div class="alphabet">
+                    <a href="javascript:void(0)" class="character js-character">Аа</a>
+                    <a href="javascript:void(0)" class="character js-character">Бб</a>
+                    <a href="javascript:void(0)" class="character js-character">Вв</a>
+                    <a href="javascript:void(0)" class="character js-character">Гг</a>
+                    <a href="javascript:void(0)" class="character js-character">Дд</a>
+                    <a href="javascript:void(0)" class="character js-character">Ее</a>
+                    <a href="javascript:void(0)" class="character js-character">Ёё</a>
+                    <a href="javascript:void(0)" class="character js-character">Жж</a>
+                    <a href="javascript:void(0)" class="character js-character">Зз</a>
+                    <br>
+                    <a href="javascript:void(0)" class="character js-character">Ии</a>
+                    <a href="javascript:void(0)" class="character js-character">Йй</a>
+                    <a href="javascript:void(0)" class="character js-character">Кк</a>
+                    <a href="javascript:void(0)" class="character js-character">Лл</a>
+                    <a href="javascript:void(0)" class="character js-character">Мм</a>
+                    <a href="javascript:void(0)" class="character js-character">Нн</a>
+                    <a href="javascript:void(0)" class="character js-character">Оо</a>
+                    <a href="javascript:void(0)" class="character js-character">Пп</a>
+                    <a href="javascript:void(0)" class="character js-character">Рр</a>
+                    <br>
+                    <a href="javascript:void(0)" class="character js-character">Сс</a>
+                    <a href="javascript:void(0)" class="character js-character">Тт</a>
+                    <a href="javascript:void(0)" class="character js-character">Уу</a>
+                    <a href="javascript:void(0)" class="character js-character">Фф</a>
+                    <a href="javascript:void(0)" class="character js-character">Хх</a>
+                    <a href="javascript:void(0)" class="character js-character">Цц</a>
+                    <a href="javascript:void(0)" class="character js-character">Чч</a>
+                    <a href="javascript:void(0)" class="character js-character">Шш</a>
+                    <a href="javascript:void(0)" class="character js-character">Щщ</a>
+                    <br>
+                    <a href="javascript:void(0)" class="character js-character">Ъъ</a>
+                    <a href="javascript:void(0)" class="character js-character">Ыы</a>
+                    <a href="javascript:void(0)" class="character js-character">Ьь</a>
+                    <a href="javascript:void(0)" class="character js-character">Ээ</a>
+                    <a href="javascript:void(0)" class="character js-character">Юю</a>
+                    <a href="javascript:void(0)" class="character js-character">Яя</a>
+                </div>
+                <div class="symbols">
+                    <a href="javascript:void(0)" class="character js-character">&sect;</a>
+                    <a href="javascript:void(0)" class="character js-character">&copy;</a>
+                    <a href="javascript:void(0)" class="character js-character">&reg;</a>
+                    <a href="javascript:void(0)" class="character js-character">@</a>
+                    <a href="javascript:void(0)" class="character js-character">№</a>
+                    <a href="javascript:void(0)" class="character js-character">#</a>
+                    <a href="javascript:void(0)" class="character js-character">$</a>
+                    <a href="javascript:void(0)" class="character js-character">%</a>
+                    <a href="javascript:void(0)" class="character js-character">&</a>
+                    <a href="javascript:void(0)" class="character js-character">(</a>
+                    <a href="javascript:void(0)" class="character js-character">)</a>
+                    <a href="javascript:void(0)" class="character js-character">{</a>
+                    <a href="javascript:void(0)" class="character js-character">}</a>
+                    <a href="javascript:void(0)" class="character js-character">[</a>
+                    <a href="javascript:void(0)" class="character js-character">]</a>
+                    <a href="javascript:void(0)" class="character js-character"><</a>
+                    <a href="javascript:void(0)" class="character js-character">></a>
+                    <br>
+                    <a href="javascript:void(0)" class="character js-character">~</a>
+                    <a href="javascript:void(0)" class="character js-character">_</a>
+                    <a href="javascript:void(0)" class="character js-character">+</a>
+                    <a href="javascript:void(0)" class="character js-character">.</a>
+                    <a href="javascript:void(0)" class="character js-character">,</a>
+                    <a href="javascript:void(0)" class="character js-character">;</a>
+                    <a href="javascript:void(0)" class="character js-character">`</a>
+                    <a href="javascript:void(0)" class="character js-character">"</a>
+                    <a href="javascript:void(0)" class="character js-character">"</a>
+                    <a href="javascript:void(0)" class="character js-character">'</a>
+                    <a href="javascript:void(0)" class="character js-character">'</a>
+                    <a href="javascript:void(0)" class="character js-character">&laquo;</a>
+                    <a href="javascript:void(0)" class="character js-character">&raquo;</a>
+                    <a href="javascript:void(0)" class="character js-character">&lsquo;</a>
+                    <a href="javascript:void(0)" class="character js-character">&rsquo;</a>
+                    <a href="javascript:void(0)" class="character js-character">&ldquo;</a>
+                    <a href="javascript:void(0)" class="character js-character">&rdquo;</a>
+                    <a href="javascript:void(0)" class="character js-character">^</a>
+                    <a href="javascript:void(0)" class="character js-character">*</a>
+                    <a href="javascript:void(0)" class="character js-character">!</a>
+                    <a href="javascript:void(0)" class="character js-character">?</a>
+                </div>
+                <div class="digits">
+                    <a href="javascript:void(0)" class="character js-character">0</a>
+                    <a href="javascript:void(0)" class="character js-character">1</a>
+                    <a href="javascript:void(0)" class="character js-character">2</a>
+                    <a href="javascript:void(0)" class="character js-character">3</a>
+                    <a href="javascript:void(0)" class="character js-character">4</a>
+                    <a href="javascript:void(0)" class="character js-character">5</a>
+                    <a href="javascript:void(0)" class="character js-character">6</a>
+                    <a href="javascript:void(0)" class="character js-character">7</a>
+                    <a href="javascript:void(0)" class="character js-character">8</a>
+                    <a href="javascript:void(0)" class="character js-character">9</a>
+                </div>
+                <script type="text/javascript">
+                    const elCharacterDisplay = document.querySelector('.js-character-display')
+                    document.querySelectorAll('.js-character').forEach(
+                        elem => elem.addEventListener(
+                            'click',
+                            event => elCharacterDisplay.innerHTML = event.currentTarget.innerHTML
+                        )
+                    )
+                </script>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "bierner.markdown-mermaid",
+        "codezombiech.gitignore",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "jzarzoso.break-from-comma",
+        "github.vscode-pull-request-github",
+        "msjsdiag.debugger-for-chrome",
+        "redhat.vscode-yaml",
+        "redhat.vscode-xml",
+        "ritwickdey.liveserver",
+        "samverschueren.final-newline"
+    ]
+}

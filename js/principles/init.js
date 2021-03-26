@@ -2,7 +2,7 @@
 import * as THREE from '../lib/three.module.js'
 // import Stats from '../lib/stats.module.js'
 
-const DATA_PATH = "/principles.json"
+const PRINCIPLES_PATH = "/data/principles.json"
 
 const CLS = {
     'bigger': 's-bigger'
@@ -95,6 +95,6 @@ export {
     CLS,
     ELEMS,
     PIC,
-    DATA_PATH,
+    PRINCIPLES_PATH,
     THREE
 }

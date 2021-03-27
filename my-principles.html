@@ -32,9 +32,10 @@
     </head>
     <body class="t-poster">
         <header class="o-header">
+            <a aria-controls="navigation" id="navigation-control" href="#navigation" class="o-nav-control"></a>
             <h1 class="o-header__title">Принципы разработки</h1>
         </header>
-        <nav class="o-nav">
+        <nav aria-owns="navigation-control" id="navigation" class="o-nav" role="navigation">
             <a href="./my-principles.html" class="c-link">принципы</a>
             <a href="./logical-fallacies.html" class="c-link">ошибки</a>
             <a href="./my-job.html" class="c-link">работа</a>

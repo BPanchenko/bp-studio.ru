@@ -1,9 +1,9 @@
 
 /* ========================================================================
-   Edging container
+    Edging
  ========================================================================== */
 
- .edging {
+.o-edging {
     position: fixed;
     display: block;
     top: 0;
@@ -19,11 +19,11 @@
 /* Right Edge
  ========================================================================== */
 
-.edging__right {
+.o-edging__right {
     --width: var(--edging-right-width);
 }
 
-.edging__right {
+.o-edging__right {
     width: calc(100vh - var(--body-padding-right) - var(--body-padding-left));
     height: var(--width);
     line-height: var(--width);
@@ -37,27 +37,27 @@
     transform: rotate(90deg);
 }
 
-.edging__right .c-line {
+.o-edging__right .c-line {
     position: absolute;
     top: calc((var(--width) - var(--stroke-width)/2) / 2);
     left: 0;
     z-index: 1;
 }
 
-.edging__right .bp-fullname,
-.edging__right .c-links-container {
+.o-edging__right .c-fullname,
+.o-edging__right .c-links-container {
     position: relative;
     z-index: 2;
     background-color: var(--body-background-color);
 }
 
-.edging__right .bp-fullname {
+.o-edging__right .c-fullname {
     padding-right: var(--space-default);
     vertical-align: text-top;
     line-height: inherit;
 }
 
-.edging__right .c-links-container {
+.o-edging__right .c-links-container {
     padding-left: var(--space-default);
     position: absolute;
     right: 0;
@@ -65,31 +65,31 @@
     font-size: 0.0001em;
 }
 
-.edging__right .c-link {
+.o-edging__right .c-link {
     transform-origin: center;
     transform: rotate(-90deg);
 }
 
-.edging__right .c-link + .c-link {
+.o-edging__right .c-link + .c-link {
     margin-left: 0.4rem;
 }
 
-.edging__right .c-link .icon::before {
+.o-edging__right .c-link .icon::before {
     font-size: var(--width);
 }
 
 /* Bottom Edge
  ========================================================================== */
 
-.edging__bottom {
+.o-edging__bottom {
     position: absolute;
     bottom: var(--body-padding-bottom);
     right: calc(var(--body-padding-right) + var(--edging-right-width) * 3);
     text-transform: uppercase;
 }
 
-.edging__bottom .bp-experience,
-.edging__bottom .bp-link-feedback,
-.edging__bottom .bp-experience {
+.o-edging__bottom .bp-experience,
+.o-edging__bottom .bp-link-feedback,
+.o-edging__bottom .bp-experience {
     display: inline-block;
 }

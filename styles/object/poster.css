@@ -1,37 +1,37 @@
 
 /* ========================================================================
-   Poster
+    Poster
  ========================================================================== */
 
-.poster {
+.o-poster {
     --poster-width: 73.2rem;
 }
 
-.poster {
+.o-poster {
     position: relative;
     top: var(--body-padding-top);
     left: var(--body-padding-left);
     z-index: 2;
 }
 
-.poster__header {
+.o-poster__header {
     width: var(--poster-width);
     border-bottom: 0.8rem solid currentColor;
 }
 
-.poster__header__title {
+.o-poster__header__title {
     font-family: var(--caption-font, 'Lobster');
     font-size: 6rem;
     line-height: 6.6rem;
     margin: 4rem 0 1rem;
 }
 
-.poster__header__title.s-bigger {
+.o-poster__header__title.s-bigger {
     font-size: 7.2rem;
     margin: 8rem 0 3.6rem;
 }
 
-.poster__text {
+.o-poster__text {
     display: block;
     width: var(--poster-width);
     padding-top: 1.4rem;
@@ -40,11 +40,11 @@
     border-top: 0.3rem solid currentColor;
 }
 
-.poster__text p {
+.o-poster__text p {
     max-width: 58ex;
 }
 
-.poster__picture {
+.o-poster__picture {
     position: fixed;
     top: var(--body-padding-top);
     right: calc(var(--body-padding-right) + var(--edging-right-width) * 2);

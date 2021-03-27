@@ -1,6 +1,6 @@
 
 @import url("./variables.css");
-@import url("./atoms.css");
-@import url("./edging.css");
-@import url("./poster.css");
+@import url("./components.css");
+@import url("./object/edging.css");
+@import url("./object/poster.css");
 @import url("./utilites.css");

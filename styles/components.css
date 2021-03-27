@@ -1,29 +1,30 @@
 
-/* Atoms
+/* ========================================================================
+   Components
  ========================================================================== */
 
- .c-fullname,
- .c-links-container,
- .c-link {
-     display: inline-block;
-     vertical-align: middle;
-     line-height: inherit;
- }
- 
- .c-fullname {
-     font-size: 2.4rem;
-     text-transform: uppercase;
- }
- 
- .c-line {
-     --stroke-width: 0.6rem;
- 
-     width: 100%;
-     height: var(--stroke-width);
-     background-color: currentColor;
- }
- 
- .c-link {
-     color: #8e84cd;
-     text-decoration: none;
- }
+.c-fullname,
+.c-links-container,
+.c-link {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: inherit;
+}
+
+.c-fullname {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.c-line {
+    --stroke-width: 0.6rem;
+
+    width: 100%;
+    height: var(--stroke-width);
+    background-color: currentColor;
+}
+
+.c-link {
+    color: #8e84cd;
+    text-decoration: none;
+}

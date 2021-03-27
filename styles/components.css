@@ -2,7 +2,7 @@
 /* Atoms
  ========================================================================== */
 
- .bp-fullname,
+ .c-fullname,
  .c-links-container,
  .c-link {
      display: inline-block;
@@ -10,7 +10,7 @@
      line-height: inherit;
  }
  
- .bp-fullname {
+ .c-fullname {
      font-size: 2.4rem;
      text-transform: uppercase;
  }

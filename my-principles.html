@@ -26,16 +26,16 @@
             screen and (max-height: 580px)
         ">
 
-        <script type="module" src="./js/lib/lodash.js"></script>
-        <script type="module" src="./js/principles/index.js?v=1.1.1"></script>
+        <script src="./js/lib/lodash.js" type="module"></script>
+        <script src="./js/principles/index.js?v=1.1.1" type="module"></script>
 
     </head>
     <body class="t-poster">
         <header class="o-header">
-            <a aria-controls="navigation" id="navigation-control" href="#navigation" class="o-nav-control"></a>
+            <a aria-controls="navigation" aria-expanded="false" id="navigation-control" href="#navigation" class="o-nav-control"></a>
             <h1 class="o-header__title">Принципы разработки</h1>
         </header>
-        <nav aria-owns="navigation-control" id="navigation" class="o-nav" role="navigation">
+        <nav aria-owns="navigation-control" aria-expanded="false" id="navigation" class="o-nav" role="navigation">
             <a href="./my-principles.html" class="c-link">принципы</a>
             <a href="./logical-fallacies.html" class="c-link">ошибки</a>
             <a href="./my-job.html" class="c-link">работа</a>
@@ -50,22 +50,23 @@
                 <div class="o-poster__picture js-canvas-container"></div>
             </section>
             <section class="o-edging">
-                <div class="o-edging__right">
-                    <span class="c-fullname">
-                        Борис Панченко
-                    </span>
-                    <div class="c-links-container">
-                        <a href="https://github.com/BPanchenko" class="c-link">
-                            <i class="icon" data-glyph="company-github"></i>
-                        </a>
-                        <a href="https://www.facebook.com/boris.panchenko.9" class="c-link">
-                            <i class="icon" data-glyph="company-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="c-line"></div>
-                </div>
-                <div class="o-edging__bottom">
-					Веб-технолог // 2003-2021
+                <span class="o-edging__string">
+                    Борис Панченко
+                </span>
+                <span class="o-edging__string">
+                    Веб-технолог
+                </span>
+                <span class="o-edging__string">
+                    2003-2021
+                </span>
+                <div class="o-edging__line"></div>
+                <div class="c-links-container">
+                    <a href="https://github.com/BPanchenko" class="c-link">
+                        <i class="icon" data-glyph="company-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/boris.panchenko.9" class="c-link">
+                        <i class="icon" data-glyph="company-facebook"></i>
+                    </a>
                 </div>
             </section>
         </main>

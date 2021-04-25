@@ -1,0 +1,48 @@
+@import url("../palette.css");
+
+/* ========================================================================
+    Edging
+ ========================================================================== */
+
+.o-side {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    bottom: auto;
+    left: auto;
+    z-index: 3;
+    transform: rotate(90deg) translateX(100%);
+    transform-origin: right top;
+    font-family: 'Nexa Replica RU';
+
+    user-select: none;
+    outline: 1px dashed var(--clr-orange);
+}
+
+/* String
+ ========================================================================== */
+
+.o-side__string span {
+    margin-left: -0.5em;
+    outline: 1px dashed var(--clr-green);
+}
+
+.o-side__string span:nth-child(1) {
+    transform: rotate(-90deg) translateX(100%);
+}
+
+/* Links
+ ========================================================================== */
+
+.c-links-container {
+    position: absolute;
+    bottom: var(--body-padding-bottom);
+    right: calc(var(--body-padding-right) + var(--edging-right-width) * 3);
+    text-transform: uppercase;
+}
+
+.c-links-container .bp-experience,
+.c-links-container .bp-link-feedback,
+.c-links-container .bp-experience {
+    display: inline-block;
+}

@@ -4,7 +4,7 @@
  ========================================================================== */
 
 .o-poster {
-    --poster-width: 73.2rem;
+    --line-width: 73.2rem;
 }
 
 .o-poster {
@@ -15,7 +15,7 @@
 }
 
 .o-poster__header {
-    width: var(--poster-width);
+    width: var(--line-width);
     border-bottom: 0.8rem solid currentColor;
 }
 
@@ -33,7 +33,7 @@
 
 .o-poster__text {
     display: block;
-    width: var(--poster-width);
+    width: var(--line-width);
     padding-top: 1.4rem;
     box-sizing: border-box;
     margin-top: 0.3rem;

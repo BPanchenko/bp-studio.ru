@@ -20,7 +20,7 @@
 }
 
 .o-poster__header__title {
-    font-family: var(--caption-font, 'Lobster');
+    font-family: var(--caption-font);
     font-size: 6rem;
     line-height: 6.6rem;
     margin: 4rem 0 1rem;
@@ -37,6 +37,7 @@
     box-sizing: border-box;
     margin-top: 0.3rem;
     border-top: 0.3rem solid currentColor;
+    font-family: var(--text-font);
 }
 
 .o-poster__text p {

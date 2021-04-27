@@ -14,8 +14,6 @@
     --body-padding-bottom: 6rem;
     --body-padding-left: 6rem;
 
-    --caption-font: "Nexa Replica RU";
-
     --space-default: var(--unit);
     --space-xxs:  calc(0.25 * var(--unit));  /* 0.4rem */
     --space-xs:   calc(0.5 * var(--unit));  /* 0.8rem */
@@ -26,6 +24,14 @@
     --space-xxl:  calc(5.25 * var(--unit)); /* 8.4rem */
 
     --edging-right-width: 3.2rem;
+}
+
+/* Typeface
+ ======================================================================== */
+
+:root {
+    --caption-font: 'Just Sans Serif';
+    --text-font: 'Just Serif';
 }
 
 /*

@@ -23,8 +23,3 @@
     height: var(--stroke-width);
     background-color: currentColor;
 }
-
-.c-link {
-    color: #8e84cd;
-    text-decoration: none;
-}

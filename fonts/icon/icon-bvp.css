@@ -13,7 +13,7 @@
     speak: none;
     line-height: 1;
     vertical-align: middle;
-    font-size: 1.6rem;
+    font-size: inherit;
     font-style: normal;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
@@ -30,3 +30,4 @@
 .icon[data-glyph=company-facebook]::before { content:'\e001'; }
 .icon[data-glyph=company-headhunter]::before { content:'\e002'; }
 .icon[data-glyph=company-linkedin]::before { content:'\e003'; }
+.icon[data-glyph=link-intact]::before { content:'\e004'; }

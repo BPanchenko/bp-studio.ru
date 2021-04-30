@@ -27,10 +27,6 @@
 /* String
  ========================================================================== */
 
-.o-side__string span {
-    outline: 1px dashed var(--clr-green);
-}
-
 .o-side__string + .o-side__string::before {
     content: '•';
 }
@@ -40,14 +36,65 @@
 }
 
 .o-side__string:nth-child(1) {
-    position: fixed;
     display: inline-block;
+    position: absolute;
+    left: 2rem;
+    top: 14.8rem;
     transform: rotate(-90deg);
-    transform-origin: right top;
+    transform-origin: left top;
+}
+
+.o-side__string:nth-child(1) > span {
+    display: inline-block;
+    transform-origin: center bottom;
+    outline: 1px dashed var(--clr-green);
+}
+
+/* И */
+.o-side__string:nth-child(1) > span:nth-child(2) {
+    transform: rotate(10deg) translate(-0.3rem, 0.2rem);
+}
+
+/* С */
+.o-side__string:nth-child(1) > span:nth-child(3) {
+    transform: rotate(20deg) translate(-0.5rem, 0.8rem);
+}
+
+.o-side__string:nth-child(1) > span:nth-child(4) {
+    transform: rotate(30deg) translate(-0.4rem, 0.8rem);
+}
+
+/* П */
+.o-side__string:nth-child(1) > span:nth-child(5) {
+    transform: rotate(40deg) translate(0rem, 2.2rem);
+}
+
+/* А */
+.o-side__string:nth-child(1) > span:nth-child(6) {
+    transform: rotate(50deg) translate(0.6rem, 3.46rem);
+}
+
+/* Н */
+.o-side__string:nth-child(1) > span:nth-child(7) {
+    transform: rotate(60deg) translate(1.8rem, 4.8rem);
+}
+
+/* Ч */
+.o-side__string:nth-child(1) > span:nth-child(8) {
+    transform: rotate(72deg) translate(3.6rem, 6rem);
+}
+
+/* Е */
+.o-side__string:nth-child(1) > span:nth-child(9) {
+    transform: rotate(82deg) translate(5.8rem, 6.8rem);
 }
 
 .o-side__string:nth-child(1) > span:last-child {
+    transform: rotate(90deg) translate(10rem, 9.3rem);
+}
 
+.o-side__string:nth-child(2) {
+    margin-left: 18.6rem;
 }
 
 .c-side-curve {
@@ -59,8 +106,9 @@
     width: 25rem;
     height: 25rem;
     border-radius: 0 8rem 0 0;
-    border: 1px solid var(--clr-indigo);
+    border: 1px solid var(--clr-black);
     background-color: var(--clr-cyan);
+    opacity: 0.6;
 }
 
 /* Links

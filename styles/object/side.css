@@ -1,4 +1,3 @@
-@import url("../palette.css");
 
 /* ========================================================================
     Sidewall
@@ -7,13 +6,19 @@
 .o-side {
     position: fixed;
     top: 0;
-    right: 0px;
+    right: 2rem;
     bottom: auto;
     left: auto;
     z-index: 3;
+    width: 100vh;
     transform: rotate(90deg) translateX(100%);
     transform-origin: right top;
-    font-family: 'Nexa Replica RU';
+
+    font-family: var(--caption-font, sans-serif);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
 
     user-select: none;
     outline: 1px dashed var(--clr-orange);
@@ -23,26 +28,43 @@
  ========================================================================== */
 
 .o-side__string span {
-    margin-left: -0.5em;
     outline: 1px dashed var(--clr-green);
 }
 
-.o-side__string span:nth-child(1) {
-    transform: rotate(-90deg) translateX(100%);
+.o-side__string + .o-side__string::before {
+    content: '•';
+}
+
+.o-side__string:nth-child(1) span + span {
+    margin-left: -0.5rem;
+}
+
+.o-side__string:nth-child(1) {
+    position: fixed;
+    display: inline-block;
+    transform: rotate(-90deg);
+    transform-origin: right top;
+}
+
+.o-side__string:nth-child(1) > span:last-child {
+
 }
 
 /* Links
  ========================================================================== */
 
-.c-links-container {
+.o-side .c-links-container {
     position: absolute;
-    bottom: var(--body-padding-bottom);
-    right: calc(var(--body-padding-right) + var(--edging-right-width) * 3);
-    text-transform: uppercase;
+    right: 2rem;
+    bottom: 0;
 }
 
-.c-links-container .bp-experience,
-.c-links-container .bp-link-feedback,
-.c-links-container .bp-experience {
-    display: inline-block;
+.o-side .c-link {
+    transform: rotate(-90deg);
+    text-decoration: none;
+    margin: 0rem 0.4rem -0.6rem;
+}
+
+.o-side .c-link .icon {
+    font-size: 3.2rem;
 }

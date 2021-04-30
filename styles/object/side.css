@@ -50,6 +50,19 @@
 
 }
 
+.c-side-curve {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 4.6rem;
+    right: 4.6rem;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 0 8rem 0 0;
+    border: 1px solid var(--clr-indigo);
+    background-color: var(--clr-cyan);
+}
+
 /* Links
  ========================================================================== */
 

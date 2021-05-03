@@ -29,5 +29,5 @@
 
 /* svg */
 .o-nav-control .c-icon--bars rect {
-    fill: var(--clr-black);
+    fill: var(--text-color);
 }

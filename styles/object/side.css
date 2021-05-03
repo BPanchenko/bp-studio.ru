@@ -106,7 +106,7 @@
     width: 25rem;
     height: 25rem;
     border-radius: 0 8rem 0 0;
-    border: 1px solid var(--clr-black);
+    border: 1px solid var(--text-color);
     background-color: var(--clr-cyan);
     opacity: 0.6;
 }

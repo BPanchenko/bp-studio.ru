@@ -6,7 +6,7 @@
 :root {
     --unit: 1.6rem;
 
-    --text-color: #2c3b49;
+    --text-color: var(--clr-black);
     --link-color: #3975b3;
 
     --body-background-color: #fdf6e4;

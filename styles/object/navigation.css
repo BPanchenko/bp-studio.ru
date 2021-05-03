@@ -1,0 +1,33 @@
+
+/* ========================================================================
+    Navigation
+ ========================================================================== */
+
+.o-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    visibility: hidden;
+    contain: content;
+}
+
+.o-nav[aria-expanded=true] {
+    display: block;
+}
+
+/* Control Element
+ ========================================================================== */
+ 
+.o-nav-control {
+    display: inline-block;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+
+/* svg */
+.o-nav-control .c-icon--bars rect {
+    fill: var(--clr-black);
+}

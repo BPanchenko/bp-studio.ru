@@ -21,7 +21,6 @@
     white-space: nowrap;
 
     user-select: none;
-    outline: 1px dashed var(--clr-orange);
 }
 
 /* String
@@ -47,7 +46,6 @@
 .o-side__string:nth-child(1) > span {
     display: inline-block;
     transform-origin: center bottom;
-    outline: 1px dashed var(--clr-green);
 }
 
 /* И */
@@ -95,20 +93,6 @@
 
 .o-side__string:nth-child(2) {
     margin-left: 18.6rem;
-}
-
-.c-side-curve {
-    display: block;
-    position: fixed;
-    z-index: 10;
-    top: 4.6rem;
-    right: 4.6rem;
-    width: 25rem;
-    height: 25rem;
-    border-radius: 0 8rem 0 0;
-    border: 1px solid var(--text-color);
-    background-color: var(--clr-cyan);
-    opacity: 0.6;
 }
 
 /* Links

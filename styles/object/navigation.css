@@ -9,6 +9,7 @@
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 5;
     display: none;
     visibility: hidden;
     contain: content;
@@ -16,6 +17,8 @@
 
 .o-nav[aria-expanded=true] {
     display: block;
+    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Control Element

@@ -1,0 +1,9 @@
+
+/* ========================================================================
+   Theme: Poster
+ ========================================================================== */
+
+.t-poster .o-nav[aria-expanded=true] + .o-container .o-poster__header,
+.t-poster .o-nav[aria-expanded=true] + .o-container .o-poster__text {
+    display: none;
+}

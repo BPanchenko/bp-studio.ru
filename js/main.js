@@ -12,6 +12,7 @@
     document.addEventListener('DOMContentLoaded', evt => {
         elNav = document.querySelector('.js-nav')
         elNavControl = document.querySelector('.js-nav-control')
+        elNav.addEventListener('click', evt => evt.stopPropagation())
         elNavControl.addEventListener('click', onClickNavControl)
     })
 }

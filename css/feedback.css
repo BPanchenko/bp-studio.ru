@@ -2,7 +2,7 @@
 @import url("./variables.css");
 
 
-.o-container {
+.o-content {
     position: absolute;
     top: var(--body-padding-top);
     right: var(--body-padding-right);

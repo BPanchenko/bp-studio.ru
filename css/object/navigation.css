@@ -14,7 +14,7 @@
     visibility: hidden;
     contain: content;
 
-    background-color: rgba(253, 246, 228, 0.8);
+    background-color: rgba(var(--bg-color), 0.8);
     padding: 12rem 6rem;
 }
 

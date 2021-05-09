@@ -13,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
 	margin: 0;
-    background-color: var(--body-background-color, #fdf6e4);
+    background-color: rgb(var(--bg-color));
 
     font-display: optional;
     font-family: var(--text-font, serif);
@@ -39,6 +39,10 @@ p {
 
 p + p {
     margin-top: var(--unit, 1.6rem);
+}
+
+ul {
+    margin: 0;
 }
 
 [aria-hidden=true] {

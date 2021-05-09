@@ -1,24 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
     <head itemscope itemtype="http://schema.org/WPHeader">
-        <title itemprop="headline">Бориса Панченко. Работа</title>
+        <title itemprop="headline">Борис Панченко. Принципы</title>
 
         <meta charset="utf-8">
         <meta name="theme-color" content="#fff">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
         <meta name="copyright" content="Boris Panchenko, 2021">
+        <meta itemprop="description" name="description" content="Принципы разработки веб-приложений">
+        <meta itemprop="keywords" name="keywords" content="www, internet, web, design, ui, ux, html, css, javascript, веб, интернет, разработка, разработчик, дизайн, дизайнер, технологии, портфолио, веб-приложение, приложение">
         
         <meta name="theme-color" content="#c9dfcc">
         
+        <link rel="preload" href="/data/principles.json" as="fetch" crossorigin="anonymous">
+        
         <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+        <link rel="stylesheet" type="text/css" href="./fonts/icon/icon-bvp.css">
+        <link rel="stylesheet" type="text/css" href="./fonts/sans-serif/stylesheet.css">
         <link rel="stylesheet" type="text/css" href="./fonts/serif/stylesheet.css">
         
-        <link rel="stylesheet" type="text/css" href="./css/variables.css">
         <link rel="stylesheet" type="text/css" href="./css/_critical.css">
+        <link rel="stylesheet" type="text/css" href="./css/_layout.css">
+        <link rel="stylesheet" type="text/css" href="./css/screen/tablet.css" media="screen and (max-width: 960px)">
+        <link rel="stylesheet" type="text/css" href="./css/screen/smartphone.css" media="
+            screen and (max-width: 760px),
+            screen and (max-width: 960px) and (max-height: 780px),
+            screen and (max-height: 580px)
+        ">
+
+        <script src="./js/lib/lodash.js" type="module"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/principles/index.js" type="module"></script>
 
     </head>
     <body>
-        <main>
+        <header class="o-header">
+            <a aria-controls="navigation" aria-expanded="false" id="navigation-control" href="#navigation" class="o-nav-control js-nav-control">
+                <svg class="c-icon--bars" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="7" />
+                    <rect x="3" y="14" />
+                    <rect x="3" y="21" />
+                </svg>
+            </a>
+            <h1 class="o-header__title">Принципы</h1>
+        </header>
+        <nav aria-owns="navigation-control" aria-expanded="false" id="navigation" class="o-nav js-nav" role="navigation">
+            <div aria-hidden="true">
+                <a href="./principles.html" class="c-link s-floating">принципы</a>
+            </div>
+            <div aria-hidden="false">
+                <a href="./logical-fallacies.html" class="c-link s-floating">ошибки</a>
+            </div>
+            <div aria-hidden="false">
+                <a href="./my-job.html" class="c-link s-floating">моя работа</a>
+            </div>
+            <div aria-hidden="false">
+                <a href="./chat.html" class="c-link s-floating">поработать со мной</a>
+            </div>
+        </nav>
+        <main class="o-content">
             <article>
                 <p>
                     Моя работа &mdash; делать удобные веб-приложения для людей.<br>
@@ -35,5 +75,37 @@
                 </p>                
             </article>
         </main>
-    </body>
+        <section class="o-side">
+            <span class="o-side__string">
+                <span>Бор</span>
+                <span>и</span>
+                <span>с</span>
+                <span>&nbsp;</span>
+                <span>П</span>
+                <span>а</span>
+                <span>н</span>
+                <span>ч</span>
+                <span>е</span>
+                <span>нко</span>
+            </span>
+            <span class="o-side__string">
+                Веб-технолог
+            </span>
+            <span class="o-side__string">
+                2003-2021
+            </span>
+            <div class="o-side__line"></div>
+            <div class="c-links-container">
+                <a href="https://github.com/BPanchenko" class="c-link">
+                    <i class="icon" data-glyph="company-github"></i>
+                </a>
+                <a href="https://www.facebook.com/boris.panchenko.9" class="c-link">
+                    <i class="icon" data-glyph="company-facebook"></i>
+                </a>
+                <a href="./links.html" class="c-link">
+                    <i class="icon" data-glyph="link-intact"></i>
+                </a>
+            </div>
+        </section>
+	</body>
 </html>

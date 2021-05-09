@@ -1,26 +1,10 @@
 
-/* Variables
- ========================================================================== */
-
-.t-logical-fallacies {
-    --body-background-color: #f2f2f2;
-    --font-secondary: 'Commissioner', sans-serif;
-    --text-color: #212121;
-}
-
-
 /* ========================================================================
    Theme: Logical Fallacies
  ========================================================================== */
 
-/*main*/
 .t-logical-fallacies {
-    display: block;
-    width: 100%;
-}
-
-.t-logical-fallacies ul {
-    margin: 0;
+    --bg-color: 242, 242, 242;
 }
 
 /* Component: List
@@ -28,17 +12,11 @@
 
 /*dl*/
 .t-logical-fallacies .c-list {
-    counter-reset: fallacies;
     margin-top: 2.4rem;
 }
 
 .t-logical-fallacies .c-list__item + .c-list__item {
     margin-top: 4rem;
-}
-
-.t-logical-fallacies .c-list__cell:nth-child(1)::before {
-    content: counter(fallacies);
-    counter-increment: fallacies;
 }
 
 .t-logical-fallacies .c-list__cell {
@@ -47,25 +25,25 @@
     box-sizing: border-box;
 }
 
-.t-logical-fallacies .c-list__cell:nth-child(1) { width: 15%; }
-.t-logical-fallacies .c-list__cell:nth-child(2) { width: 25%; }
-.t-logical-fallacies .c-list__cell:nth-child(3) { width: 60%; }
+.t-logical-fallacies .c-list__cell:nth-child(1) { width: 40%; }
+.t-logical-fallacies .c-list__cell:nth-child(2) { width: 60%; }
 
-/* Object: Intro
+/* Subobject: Intro
  ========================================================================== */
 
-.t-logical-fallacies .o-intro {
+.t-logical-fallacies .o-content__intro {
     position: relative;
     height: 50vh;
-    line-height: 40vh;
+    line-height: 34vh;
     padding-left: 6vw;
     box-sizing: border-box;
     border-bottom: 0.3rem solid currentColor;
 }
 
-.t-logical-fallacies .o-intro__container {
+.t-logical-fallacies .o-content__intro > p {
     display: inline-block;
-    line-height: 1;
+    font-size: 2.2rem;
+    line-height: 1.4;
     vertical-align: bottom;
 }
 
@@ -77,9 +55,7 @@
 
 /*p*/
 .t-logical-fallacies .o-intro__desc {
-    margin-top: 4rem;
-    font-size: 2.2rem;
-    line-height: 1.4;
+    
 }
 
 /* Object: Fallacy

@@ -1,0 +1,13 @@
+
+/* ========================================================================
+    Content
+ ========================================================================== */
+
+.o-content {
+    position: absolute;
+    top: var(--body-padding-top);
+    left: var(--body-padding-left);
+    right: var(--body-padding-right);
+    bottom: auto;
+    padding-bottom: var(--body-padding-bottom);
+}

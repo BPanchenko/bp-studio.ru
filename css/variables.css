@@ -11,10 +11,10 @@
     --link-color: #3975b3;
 
     --bg-color: 253, 246, 228;
-    --body-padding-top: 6rem;
+    --body-padding-top: 8rem;
     --body-padding-right: 18rem;
     --body-padding-bottom: 6rem;
-    --body-padding-left: 6rem;
+    --body-padding-left: 6.4rem;
 
     --space-default: var(--unit);
     --space-xxs:  calc(0.25 * var(--unit));  /* 0.4rem */

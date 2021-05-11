@@ -75,5 +75,5 @@ fetchPrinciples().then(renderPoster)
 /* DOM Events
  ========================================================================== */
 
-document.body.addEventListener('click', evt => updatePoster(principlesList), false)
+ELEMS.content.addEventListener('click', evt => updatePoster(principlesList))
 window.addEventListener('mousewheel', evt => updatePoster(principlesList), false)

@@ -8,6 +8,6 @@
     top: var(--body-padding-top);
     left: var(--body-padding-left);
     right: var(--body-padding-right);
-    bottom: auto;
+    bottom: 0;
     padding-bottom: var(--body-padding-bottom);
 }

@@ -10,6 +10,7 @@ const CLS = {
 
 const ELEMS = {
     canvasContainer: document.querySelector('.js-canvas-container'),
+    content: document.querySelector('.js-content'),
     poster: document.querySelector('.js-poster'),
     posterTitle: document.querySelector('.js-poster-title'),
     posterText: document.querySelector('.js-poster-text')

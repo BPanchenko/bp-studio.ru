@@ -4,10 +4,8 @@
  ========================================================================== */
 
 .o-content {
-    position: absolute;
-    top: var(--body-padding-top);
-    left: var(--body-padding-left);
-    right: var(--body-padding-right);
-    bottom: 0;
+    padding-top: var(--body-padding-top);
+    padding-right: var(--body-padding-right);
+    padding-left: var(--body-padding-left);
     padding-bottom: var(--body-padding-bottom);
 }

@@ -43,6 +43,7 @@ p + p {
 
 ul {
     margin: 0;
+    padding-left: 1.6rem;
 }
 
 [aria-hidden=true] {

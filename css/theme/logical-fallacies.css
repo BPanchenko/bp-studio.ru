@@ -5,9 +5,11 @@
 
 .t-logical-fallacies {
     --bg-color: 242, 242, 242;
+    --text-color: #2c3b49;
+    --indent: 4.6rem;
 }
 
-/* Subobject: Intro
+/* Content
  ========================================================================== */
 
 .o-content__intro {
@@ -36,7 +38,7 @@
 
 .o-content__intro__title-desc {
     display: block;
-    padding-left: 4.6rem;
+    padding-left: var(--indent);
     font-size: 3.6rem;
     line-height: inherit;
 }
@@ -51,45 +53,64 @@
     line-height: 2.4rem;
 }
 
-/* Object: Fallacy
+/* Fallacy
  ========================================================================== */
 
-.o-fallacies-container {
-    
-}
+.o-fallacies-container {}
 
 .o-fallacy {
+    width: 72ex;
     margin-top: 3.2rem;
 }
 
 .o-fallacy__title {
     font-family: var(--caption-font);
     font-size: 2.4rem;
+    line-height: 1.2;
     font-weight: 600;
 }
 
 .o-fallacy__title ul {
-    padding-left: 3.2rem;
+    padding-left: 2.4rem;
 }
 
 .o-fallacy__text {
-    padding: 3.2rem;
+    margin-top: 1.6rem;
+    padding-left: var(--indent);
+
+    font-size: 1.6rem;
+    line-height: 2.3rem;
 }
 
-.o-fallacy__desc {
-    max-width: 60ex;
-    font-size: 1.8rem;
-}
-
-.o-fallacy__desc ul {
-    padding-left: 2rem;
-}
+.o-fallacy__desc {}
 
 .o-fallacy__example {
-    max-width: 80ex;
-    font-size: 1.6rem;
+    position: relative;
+    margin-top: 3.2rem;
+    color: #56626d;
 }
 
-.o-fallacy__example ul {
-    padding-left: 2rem;
+.o-fallacy__example::after {
+    content: '“';
+    font-size: 4.8rem;
+    line-height: 1;
+    text-shadow: -0.3rem 0 0 rgb(var(--bg-color)), 0.3rem 0 0 rgb(var(--bg-color));
+
+    position: absolute;
+    top: -2.4rem;
+    left: 1.2rem;
+    z-index: 2;
+}
+
+.o-fallacy__example::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: auto;
+    width: 60%;
+    z-index: 1;
+
+    border-top: 0.1rem solid;
 }

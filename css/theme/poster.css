@@ -7,3 +7,12 @@
 .t-poster .o-nav[aria-expanded=true] + .o-content .o-poster__text {
     display: none;
 }
+
+.t-poster .o-content {
+  position: absolute;
+  top: var(--body-padding-top);
+  left: var(--body-padding-left);
+  right: var(--body-padding-right);
+  bottom: 0;
+  padding: 0 0 var(--body-padding-bottom) 0;
+}

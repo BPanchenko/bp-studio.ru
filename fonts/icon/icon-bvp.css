@@ -31,3 +31,4 @@
 .icon[data-glyph=company-headhunter]::before { content:'\e002'; }
 .icon[data-glyph=company-linkedin]::before { content:'\e003'; }
 .icon[data-glyph=link-intact]::before { content:'\e004'; }
+.icon[data-glyph=external-link]::before { content:'\e005'; }

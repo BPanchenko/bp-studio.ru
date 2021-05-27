@@ -10,14 +10,14 @@
 /* Subobject: Intro
  ========================================================================== */
 
-.t-logical-fallacies .o-content__intro {
+.o-content__intro {
     position: relative;
     padding-top: 3rem;
     padding-bottom: 3.4rem;
     line-height: 1;
     border-bottom: 0.3rem solid currentColor;
 }
-.t-logical-fallacies .o-content__intro::after {
+.o-content__intro::after {
     content: ' ';
     display: block;
     position: absolute;
@@ -28,25 +28,25 @@
 }
 
 /*h2*/
-.t-logical-fallacies .o-content__intro__title {
+.o-content__intro__title {
     margin-bottom: 0;
     font-size: 3rem;
     line-height: 3.4rem;
 }
 
-.t-logical-fallacies .o-content__intro__title-desc {
+.o-content__intro__title-desc {
     display: block;
     padding-left: 4.6rem;
     font-size: 3.6rem;
     line-height: inherit;
 }
 
-.t-logical-fallacies .o-content__intro__title + * {
+.o-content__intro__title + * {
     margin-top: 3.4rem;
 }
 
 /*p*/
-.t-logical-fallacies .o-content__intro p {
+.o-content__intro p {
     font-size: 1.8rem;
     line-height: 2.4rem;
 }
@@ -55,55 +55,53 @@
  ========================================================================== */
 
 /*dl*/
-.t-logical-fallacies .c-list {
+.c-list {
     margin-top: 2.4rem;
 }
 
-.t-logical-fallacies .c-list__item + .c-list__item {
+.c-list__item + .c-list__item {
     margin-top: 4rem;
 }
 
-.t-logical-fallacies .c-list__cell {
+.c-list__cell {
     display: block;
     margin: 0;
     box-sizing: border-box;
 }
 
-.t-logical-fallacies .c-list__cell:nth-child(1) { width: 40%; }
-.t-logical-fallacies .c-list__cell:nth-child(2) { width: 60%; }
+.c-list__cell:nth-child(1) { width: 40%; }
+.c-list__cell:nth-child(2) { width: 60%; }
 
 /* Object: Fallacy
  ========================================================================== */
 
 /*dl*/
-.t-logical-fallacies .o-fallacy-container {
-    display: flex;
-}
+.o-fallacy {}
 
 /*dt*/
-.t-logical-fallacies .o-fallacy__title {
+.o-fallacy__title {
     font-family: var(--font-secondary);
     font-size: 2.2rem;
 }
 
-.t-logical-fallacies .o-fallacy__title ul {
+.o-fallacy__title ul {
     padding-left: 3.2rem;
 }
 
-.t-logical-fallacies .o-fallacy__desc {
+.o-fallacy__desc {
     max-width: 60ex;
     font-size: 1.8rem;
 }
 
-.t-logical-fallacies .o-fallacy__desc ul {
+.o-fallacy__desc ul {
     padding-left: 2rem;
 }
 
-.t-logical-fallacies .o-fallacy__example {
+.o-fallacy__example {
     max-width: 80ex;
     font-size: 1.6rem;
 }
 
-.t-logical-fallacies .o-fallacy__example ul {
+.o-fallacy__example ul {
     padding-left: 2rem;
 }

@@ -21,7 +21,7 @@
         content.querySelector('.js-example').innerHTML = item.example
 
         let elem = document.createElement('div')
-        elem.classList.add('c-list__item', 'o-fallacy-container')
+        elem.classList.add('c-list__item', 'o-fallacy')
         elem.appendChild(content)
 
         return (item.elem = elem)

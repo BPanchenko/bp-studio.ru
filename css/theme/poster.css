@@ -15,4 +15,5 @@
   right: var(--body-padding-right);
   bottom: 0;
   padding: 0 0 var(--body-padding-bottom) 0;
+  user-select: none;
 }

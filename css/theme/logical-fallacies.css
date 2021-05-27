@@ -51,41 +51,29 @@
     line-height: 2.4rem;
 }
 
-/* Component: List
- ========================================================================== */
-
-/*dl*/
-.c-list {
-    margin-top: 2.4rem;
-}
-
-.c-list__item + .c-list__item {
-    margin-top: 4rem;
-}
-
-.c-list__cell {
-    display: block;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.c-list__cell:nth-child(1) { width: 40%; }
-.c-list__cell:nth-child(2) { width: 60%; }
-
 /* Object: Fallacy
  ========================================================================== */
 
-/*dl*/
-.o-fallacy {}
+.o-fallacies-container {
+    
+}
 
-/*dt*/
+.o-fallacy {
+    margin-top: 3.2rem;
+}
+
 .o-fallacy__title {
-    font-family: var(--font-secondary);
-    font-size: 2.2rem;
+    font-family: var(--caption-font);
+    font-size: 2.4rem;
+    font-weight: 600;
 }
 
 .o-fallacy__title ul {
     padding-left: 3.2rem;
+}
+
+.o-fallacy__text {
+    padding: 3.2rem;
 }
 
 .o-fallacy__desc {

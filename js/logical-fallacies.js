@@ -20,8 +20,8 @@
         content.querySelector('.js-description').innerHTML = item.description
         content.querySelector('.js-example').innerHTML = item.example
 
-        let elem = document.createElement('div')
-        elem.classList.add('c-list__item', 'o-fallacy')
+        let elem = document.createElement('section')
+        elem.classList.add('o-fallacy')
         elem.appendChild(content)
 
         return (item.elem = elem)

@@ -99,11 +99,11 @@
     padding-left: 2rem;
 }
 
-.t-logical-fallacies .o-fallacy__text {
+.t-logical-fallacies .o-fallacy__example {
     max-width: 80ex;
     font-size: 1.6rem;
 }
 
-.t-logical-fallacies .o-fallacy__text ul {
+.t-logical-fallacies .o-fallacy__example ul {
     padding-left: 2rem;
 }

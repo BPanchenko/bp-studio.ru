@@ -6,7 +6,7 @@
     let content = document.importNode(TPL.content, true)
     content.querySelector('.js-title').innerHTML = item.title
     content.querySelector('.js-description').innerHTML = item.description
-    content.querySelector('.js-text').innerHTML = item.text
+    content.querySelector('.js-example').innerHTML = item.example
 
     let elem = document.createElement('div')
     elem.classList.add('c-list__item', 'o-fallacy-container')

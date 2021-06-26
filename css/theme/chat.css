@@ -1,14 +1,15 @@
 
 @import url("./variables.css");
 
-
-.o-content {
+.t-chat .o-content {
     position: absolute;
     top: var(--body-padding-top);
     right: var(--body-padding-right);
     bottom: var(--body-padding-bottom);
     left: var(--body-padding-left);
     outline: 0.1rem dashed orangered;
+
+    font-family: var(--ui-font);
 }
 
 .o-form .c-field[name=message] {

@@ -12,10 +12,13 @@
     font-family: var(--ui-font);
 }
 
-.o-form .c-field[name=message] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+.t-chat .o-form[name=message] {
+    padding: 0.8rem;
+    background-color: var(--clr-white);
+    border-radius: 0.4rem;
+    box-shadow: var(--shadow);
+}
+
+.t-chat .o-form .c-field[name=text] {
+    border: 0;
 }

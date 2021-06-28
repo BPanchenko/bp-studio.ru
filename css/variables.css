@@ -6,6 +6,9 @@
 :root {
     --easing: cubic-bezier(0.3, 0, 0.2, 1);
     --unit: 1.6rem;
+    --unit-sm: 1.2rem;
+    --unit-xs: 0.8rem;
+    --unit-xxs: 0.4rem;
 
     --text-color: var(--clr-black);
     --link-color: #3975b3;
@@ -58,7 +61,7 @@
     --clr-orange: #f6931e;
     --clr-deep-orange: #f37648;
     --clr-brown: #d08858;
-    --clr-grey: #808080;
+    --clr-grey: #aaaaaa;
     --clr-blue-grey: #708090;
     --clr-green-grey: #151a1a;
     --clr-black: #353541;

@@ -1,0 +1,26 @@
+@import url("./variables.css");
+
+.o-message {
+    display: block;
+    width: max-content;
+    padding: var(--unit-xs) var(--unit) var(--unit-sm);
+    background-color: var(--clr-white);
+    border-radius: var(--unit-sm);
+    line-height: 1;
+}
+
+.o-message__header {
+    display: block;
+}
+
+.o-message__created-time,
+.o-message__author-name {
+    font-size: 1.1rem;
+    color: var(--clr-grey);
+}
+
+.o-message__text {
+    margin-top: var(--unit-xs);
+    font-size: 1.4rem;
+    line-height: 2rem;
+}

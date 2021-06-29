@@ -9,18 +9,22 @@
     line-height: 1;
 }
 
-.o-message__header {
-    display: block;
+.o-message__text {
+    font-size: 1.4rem;
+    line-height: 2rem;
 }
 
-.o-message__created-time,
-.o-message__author-name {
+.o-message__signature {
+    display: block;
     font-size: 1.1rem;
+    font-style: italic;
     color: var(--clr-grey);
 }
 
-.o-message__text {
+.o-message__signature::before {
+    content: '//';
+}
+
+.o-message__text + .o-message__signature {
     margin-top: var(--unit-xs);
-    font-size: 1.4rem;
-    line-height: 2rem;
 }

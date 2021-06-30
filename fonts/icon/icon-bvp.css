@@ -32,3 +32,4 @@
 .icon[data-glyph=company-linkedin]::before { content:'\e003'; }
 .icon[data-glyph=link-intact]::before { content:'\e004'; }
 .icon[data-glyph=external-link]::before { content:'\e005'; }
+.icon[data-glyph=send-message]::before { content:'\e006'; }

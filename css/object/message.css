@@ -28,3 +28,7 @@
 .o-message__text + .o-message__signature {
     margin-top: var(--unit-xs);
 }
+
+.o-message__author-name + .o-message__created-time::before {
+    content: ', ';
+}

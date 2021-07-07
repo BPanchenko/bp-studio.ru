@@ -1,5 +1,8 @@
-import { URL_MESSAGES } from './constants'
-import { SID } from './init'
-import messages from './messages'
+import { URL_MESSAGES } from './constants.js'
+import { SID } from './init.js'
+import {
+    messages,
+    MessagesView
+} from './messages.js'
 
 messages.fetch()

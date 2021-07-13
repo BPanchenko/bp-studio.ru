@@ -1,16 +1,33 @@
 import { URL_MESSAGES } from './constants.js'
 
-let messages = Object.create(Set, {
-    fetch: {
-        value: function() {
-            console.log('messages.fetch')
-            fetch(URL_MESSAGES, {
-                mode: 'no-cors'
-            }).then(r => r.json()).then(list => )
-            return this
-        }
+class Message extends Map {
+    constructor(data) {
+        data instanceof Array || (data = _.toPairs(data))
+        super(data)
     }
-})
+}
+
+class Messages extends Set {
+    fetch() {
+        console.log('messages.fetch')
+        let endpoint = `${URL_MESSAGES}?fallback`
+        fetch(endpoint).then(r => r.json()).then(r => this.#addList(r.data))
+        return this
+    }
+
+    add(data) {
+        if (data instanceof Array) return this.#addList(data)
+        data instanceof Message || (data = new Message(data)) 
+        super.add(data)
+        return this
+    }
+
+    #addList(data) {
+        console.assert(data instanceof Array, `Wrong type parameter: ${JSON.stringify(data)}`)
+        data.forEach(this.add.bind(this))
+        console.log(this)
+    }
+}
 
 class MessagesView {
     constructor (container, provider) {
@@ -22,6 +39,6 @@ class MessagesView {
 }
 
 export {
-    messages,
+    Messages,
     MessagesView
 }
